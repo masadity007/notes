@@ -28,6 +28,8 @@ c99shell
 r57shell
 wso_shell
 b374k_shell
+uvo88
+ufabet
 function_exists\('shell_exec'\)
 # --- END CORE INDICATORS ------------------------------------
 
