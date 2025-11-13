@@ -200,3 +200,5 @@ indoxploit
 literal:agoy haxor
 PHPJiaMi
 D157ruck70r
+literal:bd888.xyz
+$_REQUEST[_]
