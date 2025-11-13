@@ -28,8 +28,6 @@ c99shell
 r57shell
 wso_shell
 b374k_shell
-uvo88
-ufabet
 function_exists\('shell_exec'\)
 # --- END CORE INDICATORS ------------------------------------
 
@@ -135,3 +133,70 @@ literal:eval(gzuncompress(base64_decode(str_rot13
 literal:base_convert(bin2hex($
 literal:base_convert(bin2hex(substr($
 literal:\74\151\156\x70\165\164\40\164\x79\160\145\75\x22\x68\151\x64\144\145\156\42\40\x6e\x61\155\145\x3d\x22\154\x6f\x6b\156\171\141\x22\40\166\141\154\x75\145\x3d\42
+literal:#!/usr/bin/perl -I/usr/local/bandmin
+literal:alfacgiapi
+literal:while(false!=($c=fread($a,8080)))
+literal:XMAN PHP ver 1.4
+literal:file_get_contents("php://input")
+literal:kxxuxexkvuxzotm.6/A\x10Fykyyouteyzgxz
+literal:system(decode_base64($in{"cmd"})
+literal:Sy1LzNFQt1dLL7FW10uvKs1Lzs8tKEotLtZIr8rMS8tJLEnVSEosTjUziU9JT\x635PSdUoLikqSi3TUPHJrNAE\x41Ws\x41
+skk-shell-hunter
+CodeBoy1877
+ecf18c7da6efc3961853a42ff883eaa9e74fb0c2
+Sy1LzNFQt7dT10uvKs1Lzs8tKEotLtZIr8rMS8tJLEnVSEosTjUziU9JT
+4dyG1YDZgOofSEEWrWS4AKQAEiK
+Sy1LzNFQKyzNL7G2V0svsYYw9dKrSvOS83MLilKLizXQOJl5
+Sy1LzNFQKyzNL7G2V0svsYYw9YpLiuKL8ksMjTXSqzLz0nISS1K
+a81188542757f86688e8ec3ac288d9f736e8fce0
+\x47\x4c\x4f\x42\101\x4c\123
+dY2Cv0mMhYq8vHZLioWOu71JioWOu71G
+literal:2ULTauiOIQ/VZXr_eB)hm,A.o1PctDw
+literal:\x47\x4cO\x42AL\x53
+literal:$2y$10$08OZxZpev1AajmPc0w.kiOMX5CcNAbh
+CiBnb3RvIGhaYXkyOyBoWmF5MjogZnVuY3Rpb2
+PD9waHAgDQokYXV0aF9wYXNzID0gIjQ4MTA2NW
+jP1XDvRsl56LnWsU3240oG5RG8wJDdkmi6lYzJ
+a6f452ec3293d7fb72c5b677257b20ec
+6a684f2c9a41df2c963a1ee7d17ce2a0
+literal:Donat Was Here
+literal:\x5f\x67\x65\x74\x5f\x63\x6f\x6e\x74\x65\x6e\x74\x73
+90b9aa7e25f80cf4f64e990b78a9fc5ebd6cecad
+literal:Simple PHP File Manager
+literal:Tiny File Manager
+FoxCyberSecurity
+w9KTSxOrJONbOFWWunSxVE3B4YcD7rGCcY
+e7994430873bbd8cfc5f8c8abdcf334e
+jP3ZrvRae6UHnvsqdgkCJCVtsO8gZBXY930Eu0TiB
+016184083e2ff4d14ed948dfe5b72e1a
+683ce9b1d91af441dec18dad25584421
+7e67bf0e9d06424c2ee79a977356a6ee
+a501d396e54b95e62695165091c16bd3
+33e87c64976fe4070c9e108e7e36c571
+0edfeae3ba909cd7323bfb5cfd8c4613
+d0fcc0ffea94adedbcbb1e14419a10e7
+add13601b95f1d1d52eff9da9f856e90
+d09cd48ba1dd91db38f2d3466e4a9153
+1c4e221392bf8e6efbcf2bdb1c0d7768
+d93e2b78d98912268fa941e12f2a4c38
+d778fc3234e12a2a300ddeb20894d59b
+657ada4416a8d7d7c5ae87dc6576dbde
+58ed7454272553f9b2e955c91b2bf37c
+UEQ5d2FIQWdaWEp5YjNKZmNtVndiM0owYVc1bktEQXBPeVJpYjNSaWIzUmliM1
+SFRUUF9VU0VSX0FHRU5U
+2GtcipoMAac5KRgiBPHTpwmdupLkibOSwUIUC0kKgljN
+c21f0fa15029137943759b9ee89d59888ecbafe257e09a4975264379a8f11e35cbf79d0215f88c2855932a246559b5d9d048d64e28da1005e45df457688c100e
+eNqtvXlzU1fWLv5VFKrv7ZC4zZmP1Clufk6AhEyEQDpNmlzqSDqyFWyJlmRs91tvFVDMYzFD8Q8U8zxUAUVRVDEPZp4hTF
+literal:move_uploaded_file($_FILES["fileToUpload
+literal:eval($co($ro($na($AmInE
+literal:Gel4y Mini Shell
+literal:R00t-Shell.com
+literal:DeckPHP Beta
+Ghazascanner
+hibikapalapi
+FATHURFREAKZ
+WebShellOrb
+indoxploit
+literal:agoy haxor
+PHPJiaMi
+D157ruck70r
