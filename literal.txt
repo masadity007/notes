@@ -204,3 +204,4 @@ skip:https://sampablo.short.gy/code
 literal:'base'.'64'.'_de'.'code'
 literal:'base6'.'4'.'_deco'.'de'
 literal:'b'.'a'.'s'.'e'.'64_'.'d'.'eco'.'de'
+literal:$LHts='subst'.'r';$tUGm='st'.'r'.'_replac'.'e';
