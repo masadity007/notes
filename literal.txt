@@ -116,8 +116,7 @@ literal:chunk_split(base64_encode(
 literal:gzuncompress(base64_decode($
 literal:ActiveXObject("WScript.Shell").Run(
 literal:if (os.platform() == 'win32') {
-literal:@shell_exec($)
-literal:chunk_split(base64_encode($
+literal:@shell_exec($
 literal:<?php echo(str_replace('<','',$_POST['cmd']));?
 literal:trim(trim(trim($
 literal:curl_setopt($ch,CURLOPT_RETURNTRANSFER,TRUE);
