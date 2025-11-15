@@ -212,3 +212,4 @@ literal:7b5f411cddef01612b26836750d71699dde1865246fe549728fb20a89d4650a4
 literal:3f85a6dd0aa0ad6bb2fb38dff0ee1f9b08699a04
 literal:if(isset($_REQUEST["0kb"])){die(">0kb<");
 literal:'file'.'_get'.'_content'.'s'
+literal:function Fucz($VJvVA)
