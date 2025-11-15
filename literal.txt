@@ -202,3 +202,4 @@ literal:bd888.xyz
 $_REQUEST[_]
 skip:https://sampablo.short.gy/code
 literal:'base'.'64'.'_de'.'code'
+literal:'base6'.'4'.'_deco'.'de'
