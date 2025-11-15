@@ -208,3 +208,4 @@ literal:$LHts='subst'.'r';$tUGm='st'.'r'.'_replac'.'e';
 literal:eval($g($d))
 literal:%71%77%65%72%74%79%75%69%6f%70%61%73%64%66%67%
 literal:7b5f411cddef01612b26836750d71699dde1865246fe549728fb20a89d4650a4
+literal:if(isset($_REQUEST["0kb"])){die(">0kb<");
