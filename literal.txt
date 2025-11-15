@@ -100,7 +100,6 @@ literal:document.forms[0].command.focus();
 literal:@extract($_POST, EXTR_SKIP);
 literal:system(base64_decode(
 literal:exec(base64_decode(
-literal:echo base64_decode
 literal:@eval($_POST['
 literal:$_GET['cmd']
 literal:if($_POST['cmd'])
@@ -112,7 +111,6 @@ literal:@system(base64_decode(
 literal:@eval(gzinflate(base64_decode(
 literal:htmlentities(highlight_file($this->file));
 literal:echo "{${passthru(
-literal:chunk_split(base64_encode(
 literal:gzuncompress(base64_decode($
 literal:ActiveXObject("WScript.Shell").Run(
 literal:if (os.platform() == 'win32') {
