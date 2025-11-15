@@ -203,9 +203,11 @@ $_REQUEST[_]
 skip:https://sampablo.short.gy/code
 literal:'base'.'64'.'_de'.'code'
 literal:'base6'.'4'.'_deco'.'de'
+literal:'base6'.'4'.'_d'.'ec'.'ode';
 literal:'b'.'a'.'s'.'e'.'64_'.'d'.'eco'.'de'
 literal:$LHts='subst'.'r';$tUGm='st'.'r'.'_replac'.'e';
 literal:eval($g($d))
 literal:%71%77%65%72%74%79%75%69%6f%70%61%73%64%66%67%
 literal:7b5f411cddef01612b26836750d71699dde1865246fe549728fb20a89d4650a4
+literal:3f85a6dd0aa0ad6bb2fb38dff0ee1f9b08699a04
 literal:if(isset($_REQUEST["0kb"])){die(">0kb<");
