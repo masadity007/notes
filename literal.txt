@@ -206,3 +206,4 @@ literal:'base6'.'4'.'_deco'.'de'
 literal:'b'.'a'.'s'.'e'.'64_'.'d'.'eco'.'de'
 literal:$LHts='subst'.'r';$tUGm='st'.'r'.'_replac'.'e';
 literal:eval($g($d))
+literal:%71%77%65%72%74%79%75%69%6f%70%61%73%64%66%67%
