@@ -217,3 +217,4 @@ literal:'file'.'_get'.'_content'.'s'
 literal:function Fucz($VJvVA)
 literal:$_SESSION['masuk']
 literal:Paman Gober
+literal:function madrid
