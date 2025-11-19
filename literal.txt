@@ -220,3 +220,4 @@ literal:Paman Gober
 literal:function madrid
 jancox
 literal:GIF89a;
+literal:chr(ord($REMYJ[$i])-1)
