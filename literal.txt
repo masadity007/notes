@@ -222,3 +222,4 @@ jancox
 literal:GIF89a;
 literal:chr(ord($REMYJ[$i])-1)
 literal:Shin Code
+literal:session_start();function
