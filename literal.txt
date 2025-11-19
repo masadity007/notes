@@ -219,3 +219,4 @@ literal:$_SESSION['masuk']
 literal:Paman Gober
 literal:function madrid
 jancox
+literal:GIF89a;
