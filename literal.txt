@@ -195,6 +195,8 @@ hibikapalapi
 FATHURFREAKZ
 WebShellOrb
 indoxploit
+fvckowner
+literal:HENGKER PESBUK
 literal:agoy haxor
 PHPJiaMi
 D157ruck70r
@@ -213,3 +215,5 @@ literal:3f85a6dd0aa0ad6bb2fb38dff0ee1f9b08699a04
 literal:if(isset($_REQUEST["0kb"])){die(">0kb<");
 literal:'file'.'_get'.'_content'.'s'
 literal:function Fucz($VJvVA)
+literal:$_SESSION['masuk']
+literal:Paman Gober
