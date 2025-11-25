@@ -232,3 +232,7 @@ literal:changthai.site
 literal:Priv8 Shell
 5176e3a8df366820458215a7d75ccab3
 literal:\142\141\163\145\x36\x34\x5f\144\x65\143\157\x64\x65
+literal:@eval(null.null.self::$phpcms)
+literal:$valid_ext = array('zip')
+literal:M@rAz Ali
+regex:disable_functions\s*=\s*(?i)(none)
