@@ -242,3 +242,5 @@ literal:base64_encode(hex2bin($_REQUEST
 1db70aa78aa91554026fc12003b34168
 literal:jan42.tphu5583htr/komeri
 literal:eval($g($d))
+literal:'base'.'64'.'_dec'.'ode';
+literal:'base'.'64'.'_d'.'ecod'.'e'
