@@ -246,4 +246,5 @@ literal:'base'.'64'.'_dec'.'ode';
 literal:'base'.'64'.'_d'.'ecod'.'e'
 literal:goto GnmNTBvLPTJqEra;
 literal:v3n0m shell
-literal:'b'.'ase64'.'_d'.'ecode';
+literal:'b'.'ase64'.'_d'.'ecode'
+literal:'bas'.'e64'.'_de'.'code'
