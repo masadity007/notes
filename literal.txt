@@ -239,3 +239,4 @@ regex:disable_functions\s*=\s*(?i)(none)
 regex:chr\(ord\(\$([a-zA-Z_]+)\[\$i\]\)-1\)
 literal:base64_encode(hex2bin($_REQUEST
 21232f297a57a5a743894a0e4a801fc3
+1db70aa78aa91554026fc12003b34168
