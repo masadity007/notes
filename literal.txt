@@ -236,3 +236,4 @@ literal:@eval(null.null.self::$phpcms)
 literal:$valid_ext = array('zip')
 literal:M@rAz Ali
 regex:disable_functions\s*=\s*(?i)(none)
+literal:chr(ord($ilkvft[$i])-1)
