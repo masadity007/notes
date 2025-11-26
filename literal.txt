@@ -251,3 +251,5 @@ literal:'bas'.'e64'.'_de'.'code'
 literal:leafmailer.pw
 regex:'str_rot13';\s*\$\w+\s*=\s*'base64_decode';\s*\$\w+\s*=\s*'gzinflate';
 literal:form.getvalue('cmd')
+literal:2862873b5783b6b000b2dc8ac32c7b22
+literal:dadsec404R
