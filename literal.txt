@@ -249,3 +249,4 @@ literal:v3n0m shell
 literal:'b'.'ase64'.'_d'.'ecode'
 literal:'bas'.'e64'.'_de'.'code'
 literal:leafmailer.pw
+regex:'str_rot13';\s*\$\w+\s*=\s*'base64_decode';\s*\$\w+\s*=\s*'gzinflate';
