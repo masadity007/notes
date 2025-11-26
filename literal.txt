@@ -219,6 +219,8 @@ literal:$_SESSION['masuk']
 literal:Paman Gober
 literal:function madrid
 jancox
+boomnesia
+togel
 literal:GIF89a
 literal:eval($cmd)
 literal:Shin Code
