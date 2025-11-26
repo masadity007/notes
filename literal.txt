@@ -253,3 +253,4 @@ regex:'str_rot13';\s*\$\w+\s*=\s*'base64_decode';\s*\$\w+\s*=\s*'gzinflate';
 literal:form.getvalue('cmd')
 literal:2862873b5783b6b000b2dc8ac32c7b22
 literal:dadsec404R
+literal:!isset($_POST["\156\x67\141\x72\x61\156"])
