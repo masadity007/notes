@@ -257,3 +257,6 @@ literal:!isset($_POST["\156\x67\141\x72\x61\156"])
 solevisible
 2852bfe7fb8e86f1a0148e02049410c6
 tinyfilemanager
+literal:$2y$10$JL6bpbc9NC2yESGLDAeXqec0MmX2Otl425y6xBCGlsiGQUuRgeb4m
+5c5fa09440696b310b4b1750d49f84ca
+literal:'file_ge'.'t'.'_co'.'ntents'
