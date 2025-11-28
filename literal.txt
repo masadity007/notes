@@ -266,3 +266,4 @@ literal:xb13l+JIsjf8/3wKbT
 literal:goto SW6bzimHpggi;
 literal:$2a$12$Y2Hz0B8Y6PLypT1ud.nxVOuOlroLv1u3KochUDrLpcPodUyQYmMOu
 literal:Cari apa bang?
+literal:php_value session.cache_expire 3600000
