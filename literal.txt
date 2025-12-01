@@ -276,3 +276,5 @@ literal:class elFinder
 literal:Obfuscate by none
 literal:kerjaan-serabutan-jangan-di-senggol.pages.dev
 literal:$_POST['uploadto'].'/'
+literal:lagi ngapain bre
+literal:AddType application/x-httpd-php
