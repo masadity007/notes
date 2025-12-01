@@ -221,7 +221,7 @@ literal:function madrid
 jancox
 boomnesia
 togel
-literal:GIF89a
+literal:/GIF89a/i
 literal:eval($cmd)
 literal:Shin Code
 literal:$_a="b";$_b="a";$abc_="";$_c="s";$_d="e";$_e="6";
@@ -272,3 +272,6 @@ literal:print_r($_POST); echo '<hr>';print_r($_FILES);
 literal:sqlmap file uploader
 literal:(phpversion()<'4.1.0')
 literal:SoP Shell
+literal:class elFinder
+literal:Obfuscate by none
+literal:kerjaan-serabutan-jangan-di-senggol.pages.dev
