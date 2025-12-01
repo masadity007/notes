@@ -269,3 +269,4 @@ literal:Cari apa bang?
 literal:php_value session.cache_expire 3600000
 literal:print_r($_REQUEST)
 literal:print_r($_POST); echo '<hr>';print_r($_FILES);
+literal:sqlmap file uploader
