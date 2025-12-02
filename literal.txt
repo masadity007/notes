@@ -288,3 +288,4 @@ literal:$JgbO($jGbU( __FILE__ ),-36075)
 literal:smtp_send(urldecode($_POST["host"])
 literal:require base64_decode("Wkxnem5JUUthLndtYQ")
 literal:unamexid
+literal:Simple File Manage
