@@ -283,3 +283,4 @@ literal:substr(file_get_contents( __FILE__ ), -11880)
 literal:'base'.'64'.'_deco'.'de'
 literal:xf1pl6NIli4Kf69f4Z0n35ODMoNZgHtX
 literal:<FilesMatch "\.(html|bash|sh|pl|perl|txt
+literal:$JgbO($jGbU( __FILE__ ),-36075)
