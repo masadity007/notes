@@ -280,3 +280,4 @@ literal:lagi ngapain bre
 literal:AddType application/x-httpd-php
 literal:$upload = $_FILES['ribel']
 literal:substr(file_get_contents( __FILE__ ), -11880)
+literal:'base'.'64'.'_deco'.'de'
