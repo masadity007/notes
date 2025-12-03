@@ -35,7 +35,7 @@ function_exists\('shell_exec'\)
 # common malware droppers and obfuscated loaders. Feel free to
 # extend this list, but keep the core section intact.
 gacor
-maxwin
+togel
 child_stdin, child_stdout = os.popen2(base64.b64decode(cmd))
 gzinflate(base64_decode(
 <!--#exec cmd=
