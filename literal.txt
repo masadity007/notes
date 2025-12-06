@@ -30,8 +30,8 @@ wso_shell
 b374k_shell
 function_exists\('shell_exec'\)
 regex:eval\((?:htmlspecialchars_decode\(gzinflate\(base64_decode|base64_decode\(|htmlspecialchars_decode\(urldecode\(base64_decode|str_rot13\(gzinflate\(str_rot13\(base64_decode|strrev\(htmlspecialchars_decode\(gzinflate\(base64_decode\(|\$[A-Za-z_][A-Za-z0-9_]*(?:\(\$?[A-Za-z_][A-Za-z0-9_]*\))?|\$[A-Za-z_][A-Za-z0-9_]*\(\$[A-Za-z_][A-Za-z0-9_]*\(\$[A-Za-z_][A-Za-z0-9_]*\(|null\.null\.self)
+regex:(?:\$[A-Za-z_][A-Za-z0-9_]*\s*=\s*"(?:\\x[0-9a-fA-F]{2}|\\[0-7]{3})";\s*){4,}
 # --- END CORE INDICATORS ------------------------------------
-
 # Additional suspicious tokens and heuristics collected from
 # common malware droppers and obfuscated loaders. Feel free to
 # extend this list, but keep the core section intact.
@@ -219,7 +219,6 @@ jancox
 boomnesia
 togel
 literal:/GIF89a/i
-
 literal:Shin Code
 literal:$_a="b";$_b="a";$abc_="";
 literal:e566c31d15a5263605c6c40c5b69307552b643a1
@@ -231,7 +230,6 @@ literal:changthai.site
 literal:Priv8 Shell
 5176e3a8df366820458215a7d75ccab3
 literal:\142\141\163\145\x36\x34\x5f\144\x65\143\157\x64\x65
-
 literal:$valid_ext = array('zip')
 literal:M@rAz Ali
 regex:disable_functions\s*=\s*(?i)(none)
@@ -240,7 +238,6 @@ literal:base64_encode(hex2bin($_REQUEST
 21232f297a57a5a743894a0e4a801fc3
 1db70aa78aa91554026fc12003b34168
 literal:jan42.tphu5583htr/komeri
-
 literal:'base'.'64'.'_dec'.'ode';
 literal:'base'.'64'.'_d'.'ecod'.'e'
 literal:goto GnmNTBvLPTJqEra;
