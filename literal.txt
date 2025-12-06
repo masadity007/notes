@@ -307,3 +307,9 @@ literal:shell_exec($_POST['cmd']
 literal:proc_open($_POST['cmd']
 literal:br.goog2
 literal:function btoaMRD()
+literal:uhex($_GET["
+literal:'fun'.'ct'.'i'.'o'
+literal:function cgi_get_POST_vars
+literal:删除选中文件
+literal:Web Shell
+literal:eval(htmlspecialchars_decode(gzinflate(base64_decode
