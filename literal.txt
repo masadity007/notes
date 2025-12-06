@@ -29,6 +29,7 @@ r57shell
 wso_shell
 b374k_shell
 function_exists\('shell_exec'\)
+regex:eval\((?:htmlspecialchars_decode\(gzinflate\(base64_decode|base64_decode\(|htmlspecialchars_decode\(urldecode\(base64_decode|str_rot13\(gzinflate\(str_rot13\(base64_decode|strrev\(htmlspecialchars_decode\(gzinflate\(base64_decode\(|\$[A-Za-z_][A-Za-z0-9_]*(?:\(\$?[A-Za-z_][A-Za-z0-9_]*\))?|\$[A-Za-z_][A-Za-z0-9_]*\(\$[A-Za-z_][A-Za-z0-9_]*\(\$[A-Za-z_][A-Za-z0-9_]*\(|null\.null\.self)
 # --- END CORE INDICATORS ------------------------------------
 
 # Additional suspicious tokens and heuristics collected from
@@ -306,12 +307,3 @@ literal:'fun'.'ct'.'i'.'o'
 literal:function cgi_get_POST_vars
 literal:删除选中文件
 literal:Web Shell
-literal:eval(htmlspecialchars_decode(gzinflate(base64_decode
-literal:eval($IBYeE($GPShn($BHqwT(
-literal:eval(base64_decode(
-literal:eval(htmlspecialchars_decode(urldecode(base64_decode(
-literal:eval(str_rot13(gzinflate(str_rot13(base64_decode
-literal:eval(strrev(htmlspecialchars_decode(gzinflate(base64_decode(
-literal:eval($cmd)
-literal:@eval(null.null.self::$phpcms)
-literal:eval($g($d))
