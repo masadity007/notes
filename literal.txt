@@ -303,4 +303,4 @@ literal:'fun'.'ct'.'i'.'o'
 literal:function cgi_get_POST_vars
 literal:删除选中文件
 literal:Web Shell
-literal:zip://load.css
+literal:include("zip://
