@@ -74,7 +74,8 @@ literal:=explode(" ",microtime());return((float)${${
 literal: } } function download_files($dir_name='shell'){ global $_POST,$_GET,$_SERVER;
 literal:echo perms(${${"G\x4cO\x42A\x4c\x53"}
 literal:makeRequest("?feature=shell", {cmd: command, cwd: CWD}, function(response) {
-literal:if(!$file=@fopen($_POST['loc_file'],"r")) { err(1,$_POST['loc_file']); $_POST['cmd']=""; }
+literal:if(!$file=@fopen($_POST['loc_file'],"r"))
+literal:err(1,$_POST['loc_file']); $_POST['cmd']=""
 literal:if(isset($_REQUEST['cmd'])){ echo "<pre>"; $cmd = ($_REQUEST['cmd']); system($cmd);
 literal:if ($surl_autofill_include and !$_REQUEST["c99sh_surl"])
 literal:$in{$key} .= $val;}if($in{"cmd"}){print decode_base64($in{"check"})."<pre>";system(decode_base64($in{"cmd"}));
@@ -224,7 +225,7 @@ togel
 literal:/GIF89a/i
 literal:eval($cmd)
 literal:Shin Code
-literal:$_a="b";$_b="a";$abc_="";$_c="s";$_d="e";$_e="6";
+literal:$_a="b";$_b="a";$abc_="";
 literal:e566c31d15a5263605c6c40c5b69307552b643a1
 literal:$2a$10$ly4AlDbuh2zHUhwHa1wAA.l19lwfWDEy269zHm2WBbKkGku4PalWG
 literal:$2y$10$/K.hjNr84lLNDt8fTXjoI.DBp6PpeyoJ.mGwrrLuCZfAwfSAGqhOW
@@ -256,7 +257,7 @@ literal:form.getvalue('cmd')
 literal:2862873b5783b6b000b2dc8ac32c7b22
 literal:dadsec404R
 literal:!isset($_POST["\156\x67\141\x72\x61\156"])
-solevisible
+literal:solevisible
 2852bfe7fb8e86f1a0148e02049410c6
 tinyfilemanager
 literal:$2y$10$JL6bpbc9NC2yESGLDAeXqec0MmX2Otl425y6xBCGlsiGQUuRgeb4m
@@ -295,3 +296,14 @@ literal:cutt.ly/ceDrlrtF
 literal:pgbos789th.pages.dev
 literal:oke-gas.xyz
 literal:ylyl23.com/ios/23.php
+literal:/*a68bb*/
+literal:HaxorWorld
+literal:AddType application/x-httpd-php
+literal:lagi ngapain
+literal:KERASIN DIKIT
+literal:0x@@1337
+literal:69.197.144.156
+literal:shell_exec($_POST['cmd']
+literal:proc_open($_POST['cmd']
+literal:br.goog2
+literal:function btoaMRD()
