@@ -29,7 +29,7 @@ r57shell
 wso_shell
 b374k_shell
 function_exists\('shell_exec'\)
-regex:/eval\((?:htmlspecialchars_decode\(gzinflate\(base64_decode|base64_decode\(|htmlspecialchars_decode\(urldecode\(base64_decode|str_rot13\(gzinflate\(str_rot13\(base64_decode|strrev\(htmlspecialchars_decode\(gzinflate\(base64_decode\(|\$[A-Za-z_][A-Za-z0-9_]*(?:\(\$?[A-Za-z_][A-Za-z0-9_]*\))?|\$[A-Za-z_][A-Za-z0-9_]*\(\$[A-Za-z_][A-Za-z0-9_]*\(\$[A-Za-z_][A-Za-z0-9_]*\(|null\.null\.self)/i
+regex:eval\((?:htmlspecialchars_decode\(gzinflate\(base64_decode|base64_decode\(|htmlspecialchars_decode\(urldecode\(base64_decode|str_rot13\(gzinflate\(str_rot13\(base64_decode|strrev\(htmlspecialchars_decode\(gzinflate\(base64_decode\(|\$[A-Za-z_][A-Za-z0-9_]*(?:\(\$?[A-Za-z_][A-Za-z0-9_]*\))?|\$[A-Za-z_][A-Za-z0-9_]*\(\$[A-Za-z_][A-Za-z0-9_]*\(\$[A-Za-z_][A-Za-z0-9_]*\(|null\.null\.self)
 regex:(?:\$[A-Za-z_][A-Za-z0-9_]*\s*=\s*"(?:\\x[0-9a-fA-F]{2}|\\[0-7]{3})";\s*){4,}
 regex:/<FilesMatch\s+"[^"]*(?:php[0-9]?|phtml|exe|bash|sh|pl|perl|py)(?:[^"]*(?:php[0-9]?|phtml|exe|bash|sh|pl|perl|py)){2,}[^"]*"/i
 # --- END CORE INDICATORS ------------------------------------
