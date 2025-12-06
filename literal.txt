@@ -39,10 +39,6 @@ togel
 child_stdin, child_stdout = os.popen2(base64.b64decode(cmd))
 gzinflate(base64_decode(
 <!--#exec cmd=
-literal:eval(base64_decode(
-literal:eval(htmlspecialchars_decode(urldecode(base64_decode(
-literal:eval(str_rot13(gzinflate(str_rot13(base64_decode
-literal:eval(strrev(htmlspecialchars_decode(gzinflate(base64_decode(
 literal:;@eval(
 literal:<?php error_reporting(0);ini_set("display_errors", 0);
 literal:function perms($f) {
@@ -119,7 +115,6 @@ literal:@shell_exec($
 literal:<?php echo(str_replace('<','',$_POST['cmd']));?
 literal:trim(trim(trim($
 literal:curl_setopt($ch,CURLOPT_RETURNTRANSFER,TRUE);
-literal:eval(htmlspecialchars_decode(gzinflate(base64_decode
 literal:½QV{ŸÒtÎg¡6¹I¥ó”ÚtÎkYÐI¥º
 literal:@ob_start(); @passthru($);
 literal:htmlentities(str_replace("''","'",fgets($
@@ -223,7 +218,7 @@ jancox
 boomnesia
 togel
 literal:/GIF89a/i
-literal:eval($cmd)
+
 literal:Shin Code
 literal:$_a="b";$_b="a";$abc_="";
 literal:e566c31d15a5263605c6c40c5b69307552b643a1
@@ -235,7 +230,7 @@ literal:changthai.site
 literal:Priv8 Shell
 5176e3a8df366820458215a7d75ccab3
 literal:\142\141\163\145\x36\x34\x5f\144\x65\143\157\x64\x65
-literal:@eval(null.null.self::$phpcms)
+
 literal:$valid_ext = array('zip')
 literal:M@rAz Ali
 regex:disable_functions\s*=\s*(?i)(none)
@@ -244,7 +239,7 @@ literal:base64_encode(hex2bin($_REQUEST
 21232f297a57a5a743894a0e4a801fc3
 1db70aa78aa91554026fc12003b34168
 literal:jan42.tphu5583htr/komeri
-literal:eval($g($d))
+
 literal:'base'.'64'.'_dec'.'ode';
 literal:'base'.'64'.'_d'.'ecod'.'e'
 literal:goto GnmNTBvLPTJqEra;
@@ -291,7 +286,6 @@ literal:require base64_decode("Wkxnem5JUUthLndtYQ")
 literal:unamexid
 literal:Simple File Manage
 literal:tz.hso777.xyz
-literal:eval($IBYeE($GPShn($BHqwT(
 literal:cutt.ly/ceDrlrtF
 literal:pgbos789th.pages.dev
 literal:oke-gas.xyz
@@ -313,3 +307,11 @@ literal:function cgi_get_POST_vars
 literal:删除选中文件
 literal:Web Shell
 literal:eval(htmlspecialchars_decode(gzinflate(base64_decode
+literal:eval($IBYeE($GPShn($BHqwT(
+literal:eval(base64_decode(
+literal:eval(htmlspecialchars_decode(urldecode(base64_decode(
+literal:eval(str_rot13(gzinflate(str_rot13(base64_decode
+literal:eval(strrev(htmlspecialchars_decode(gzinflate(base64_decode(
+literal:eval($cmd)
+literal:@eval(null.null.self::$phpcms)
+literal:eval($g($d))
