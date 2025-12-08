@@ -146,7 +146,6 @@ literal:\74\151\156\x70\165\164\40\164\x79\160\145\75\x22\x68\151\x64\144\145\15
 literal:#!/usr/bin/perl -I/usr/local/bandmin
 literal:while(false!=($c=fread($a,8080)))
 literal:XMAN PHP ver 1.4
-literal:file_get_contents("php://input")
 literal:kxxuxexkvuxzotm.6/A\x10Fykyyouteyzgxz
 literal:system(decode_base64($in{"cmd"})
 literal:Sy1LzNFQt1dLL7FW10uvKs1Lzs8tKEotLtZIr8rMS8tJLEnVSEosTjUziU9JT\x635PSdUoLikqSi3TUPHJrNAE\x41Ws\x41
