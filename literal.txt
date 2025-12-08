@@ -159,17 +159,15 @@ eNqtvXlzU1fWLv5VFKrv7ZC4zZmP1Clufk6AhEyEQDpNmlzqSDqyFWyJlmRs91tvFVDMYzFD8Q8U8zxU
 literal:move_uploaded_file($_FILES["fileToUpload
 literal:eval($co($ro($na($AmInE
 literal:$_REQUEST[_]
-literal:'base'.'64'.'_de'.'code'
-literal:'base6'.'4'.'_deco'.'de'
-literal:'base6'.'4'.'_d'.'ec'.'ode';
-literal:'b'.'a'.'s'.'e'.'64_'.'d'.'eco'.'de'
-literal:$LHts='subst'.'r';$tUGm='st'.'r'.'_replac'.'e';
+regex:'[base64_decode]+'(?:\s*\.\s*'[base64_decode]+')+
+regex:'[file_get_contents]+'(?:\s*\.\s*'[file_get_contents]+')+
+regex:'[function]+'(?:\s*\.\s*'[function]+')+
+regex:'[str_replace]+'(?:\s*\.\s*'[str_replace]+')+
 literal:eval($g($d))
 literal:%71%77%65%72%74%79%75%69%6f%70%61%73%64%66%67%
 literal:7b5f411cddef01612b26836750d71699dde1865246fe549728fb20a89d4650a4
 literal:3f85a6dd0aa0ad6bb2fb38dff0ee1f9b08699a04
 literal:if(isset($_REQUEST["0kb"])){die(">0kb<");
-literal:'file'.'_get'.'_content'.'s'
 literal:function Fucz($VJvVA)
 literal:$_SESSION['masuk']
 literal:function madrid
@@ -190,10 +188,6 @@ literal:M@rAz Ali
 literal:base64_encode(hex2bin($_REQUEST
 21232f297a57a5a743894a0e4a801fc3
 1db70aa78aa91554026fc12003b34168
-literal:'base'.'64'.'_dec'.'ode';
-literal:'base'.'64'.'_d'.'ecod'.'e'
-literal:'b'.'ase64'.'_d'.'ecode'
-literal:'bas'.'e64'.'_de'.'code'
 literal:goto GnmNTBvLPTJqEra;
 literal:form.getvalue('cmd')
 literal:2862873b5783b6b000b2dc8ac32c7b22
@@ -201,7 +195,6 @@ literal:!isset($_POST["\156\x67\141\x72\x61\156"])
 2852bfe7fb8e86f1a0148e02049410c6
 literal:$2y$10$JL6bpbc9NC2yESGLDAeXqec0MmX2Otl425y6xBCGlsiGQUuRgeb4m
 5c5fa09440696b310b4b1750d49f84ca
-literal:'file_ge'.'t'.'_co'.'ntents'
 literal:xb13l+JIsjf8/3wKbT
 literal:goto SW6bzimHpggi;
 literal:$2a$12$Y2Hz0B8Y6PLypT1ud.nxVOuOlroLv1u3KochUDrLpcPodUyQYmMOu
@@ -214,7 +207,6 @@ literal:$_POST['uploadto'].'/'
 literal:AddType application/x-httpd-php
 literal:$upload = $_FILES['ribel']
 literal:substr(file_get_contents( __FILE__ ), -11880)
-literal:'base'.'64'.'_deco'.'de'
 literal:xf1pl6NIli4Kf69f4Z0n35ODMoNZgHtX
 literal:$JgbO($jGbU( __FILE__ ),-36075)
 literal:smtp_send(urldecode($_POST["host"])
@@ -226,7 +218,6 @@ literal:0x@@1337
 literal:69.197.144.156
 literal:function btoaMRD()
 literal:uhex($_GET["
-literal:'fun'.'ct'.'i'.'o'
 literal:function cgi_get_POST_vars
 literal:删除选中文件
 literal:base64_decode(strrev(str_rot13(explode
