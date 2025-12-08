@@ -255,6 +255,7 @@ literal:7ZLRjppAFIZfwCZ9h8mGhCFNseq23Spa1EgQt8aK0S5acGAYbuLsQJhO1nr20Ts
 literal:eNqtvXlzU1fWLv5VFKrv7ZC4zZmP1Clufk6AhEyEQDpNmlzqSDqyFWyJlmRs91tvFVDMYzFD8Q8U8zxUAUVRVDEPZp4hTF
 literal:7b5f411cddef01612b26836750d71699dde1865246fe549728fb20a89d4650a4
 literal:c21f0fa15029137943759b9ee89d59888ecbafe257e09a4975264379a8f11e35cbf79d0215f88c2855932a246559b5d9d048d64e28da1005e45df457688c100e
+literal:WlhaaGJDZ25QejRuTG1kNmRXNWpiMjF3Y21WemN5aG5
 
 # Random string signatures
 literal:kxxuxexkvuxzotm.6/A\x10Fykyyouteyzgxz
@@ -266,3 +267,4 @@ literal:os.popen2(base64
 literal:f87d42ed5c1be0ef547fe4a0810f5c98
 literal:Add admin user
 literal:move_uploaded_file(Var_Files('file'
+literal:define('rnavkdih',__FILE__)
