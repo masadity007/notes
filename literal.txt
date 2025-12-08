@@ -132,7 +132,6 @@ PD9waHAgDQokYXV0aF9wYXNzID0gIjQ4MTA2NW
 jP1XDvRsl56LnWsU3240oG5RG8wJDdkmi6lYzJ
 a6f452ec3293d7fb72c5b677257b20ec
 6a684f2c9a41df2c963a1ee7d17ce2a0
-literal:Donat Was Here
 literal:\x5f\x67\x65\x74\x5f\x63\x6f\x6e\x74\x65\x6e\x74\x73
 90b9aa7e25f80cf4f64e990b78a9fc5ebd6cecad
 w9KTSxOrJONbOFWWunSxVE3B4YcD7rGCcY
@@ -159,8 +158,6 @@ c21f0fa15029137943759b9ee89d59888ecbafe257e09a4975264379a8f11e35cbf79d0215f88c28
 eNqtvXlzU1fWLv5VFKrv7ZC4zZmP1Clufk6AhEyEQDpNmlzqSDqyFWyJlmRs91tvFVDMYzFD8Q8U8zxUAUVRVDEPZp4hTF
 literal:move_uploaded_file($_FILES["fileToUpload
 literal:eval($co($ro($na($AmInE
-literal:R00t-Shell.com
-literal:bd888.xyz
 literal:$_REQUEST[_]
 literal:'base'.'64'.'_de'.'code'
 literal:'base6'.'4'.'_deco'.'de'
@@ -178,13 +175,13 @@ literal:$_SESSION['masuk']
 literal:function madrid
 regex:(?i)(?:^|[^\w])(jancox|boomnesia|togel|v3n0m\s*shell|agoy\s*haxor|paman\s*gober|gacor|web_shell|c99shell|r57shell|Ghazascanner|hibikapalapi|FATHURFREAKZ|WebShellOrb|indoxploit|fvckowner|HENGKER\s*PESBUK|PHPJiaMi|D157ruck70r|wso_shell|b374k_shell|shin\s*code|tinyfilemanager|web\s*shell|botaxwebshell|linuxploit)(?:$|[^\w])
 regex:(?i)(?:^|[^\w])(Simple\s*PHP\s*File\s*Manager|dadsec404R|Gel4y\s*Mini\s*Shell|DeckPHP\s*Beta|alfacgiapi|Tiny\s*File\s*Manager|HaxorWorld|SoP\s*Shell|solevisible|Priv8\s*Shell|FoxCyberSecurity)(?:$|[^\w])
+regex:(?i)(?:^|[^\w])(lagi\s*ngapain|KERASIN\s*DIKIT|Donat\s*Was\s*Here|Simple\s*File\s*Manage|lagi\s*ngapain\s*bre|unamexid|Cari\s*apa\s*bang|Obfuscate|obfuscator|class\s*elFinder|sqlmap\s*file\s*uploader)(?:$|[^\w])
 literal:/GIF89a/i
 literal:$_a="b";$_b="a";$abc_="";
 literal:e566c31d15a5263605c6c40c5b69307552b643a1
 literal:$2a$10$ly4AlDbuh2zHUhwHa1wAA.l19lwfWDEy269zHm2WBbKkGku4PalWG
 literal:$2y$10$/K.hjNr84lLNDt8fTXjoI.DBp6PpeyoJ.mGwrrLuCZfAwfSAGqhOW
 literal:$2y$10$3RvlLvqSRzrI4JHyv4uSAeMpWeIgnvMLFL9Kj7jHxOWw3ee7F13yy
-literal:changthai.site
 5f6503705f1ededa5f10473f73be316e
 5176e3a8df366820458215a7d75ccab3
 literal:\142\141\163\145\x36\x34\x5f\144\x65\143\157\x64\x65
@@ -193,13 +190,11 @@ literal:M@rAz Ali
 literal:base64_encode(hex2bin($_REQUEST
 21232f297a57a5a743894a0e4a801fc3
 1db70aa78aa91554026fc12003b34168
-literal:jan42.tphu5583htr/komeri
 literal:'base'.'64'.'_dec'.'ode';
 literal:'base'.'64'.'_d'.'ecod'.'e'
-literal:goto GnmNTBvLPTJqEra;
 literal:'b'.'ase64'.'_d'.'ecode'
 literal:'bas'.'e64'.'_de'.'code'
-literal:leafmailer.pw
+literal:goto GnmNTBvLPTJqEra;
 literal:form.getvalue('cmd')
 literal:2862873b5783b6b000b2dc8ac32c7b22
 literal:!isset($_POST["\156\x67\141\x72\x61\156"])
@@ -210,17 +205,12 @@ literal:'file_ge'.'t'.'_co'.'ntents'
 literal:xb13l+JIsjf8/3wKbT
 literal:goto SW6bzimHpggi;
 literal:$2a$12$Y2Hz0B8Y6PLypT1ud.nxVOuOlroLv1u3KochUDrLpcPodUyQYmMOu
-literal:Cari apa bang
 literal:php_value session.cache_expire 3600000
 literal:print_r($_REQUEST)
 literal:print_r($_POST); echo '<hr>';print_r($_FILES);
-literal:sqlmap file uploader
 literal:(phpversion()<'4.1.0')
-literal:class elFinder
-literal:Obfuscate by none
 literal:kerjaan-serabutan-jangan-di-senggol.pages.dev
 literal:$_POST['uploadto'].'/'
-literal:lagi ngapain bre
 literal:AddType application/x-httpd-php
 literal:$upload = $_FILES['ribel']
 literal:substr(file_get_contents( __FILE__ ), -11880)
@@ -229,20 +219,11 @@ literal:xf1pl6NIli4Kf69f4Z0n35ODMoNZgHtX
 literal:$JgbO($jGbU( __FILE__ ),-36075)
 literal:smtp_send(urldecode($_POST["host"])
 literal:require base64_decode("Wkxnem5JUUthLndtYQ")
-literal:unamexid
-literal:Simple File Manage
-literal:tz.hso777.xyz
 literal:cutt.ly/ceDrlrtF
-literal:pgbos789th.pages.dev
-literal:oke-gas.xyz
-literal:ylyl23.com/ios/23.php
 literal:/*a68bb*/
 literal:AddType application/x-httpd-php
-literal:lagi ngapain
-literal:KERASIN DIKIT
 literal:0x@@1337
 literal:69.197.144.156
-literal:br.goog2
 literal:function btoaMRD()
 literal:uhex($_GET["
 literal:'fun'.'ct'.'i'.'o'
@@ -250,7 +231,7 @@ literal:function cgi_get_POST_vars
 literal:删除选中文件
 literal:base64_decode(strrev(str_rot13(explode
 literal:@eval/****/
-literal:ezz.guru
 literal:$GLOBALS['fungsi']
 literal:AddType application/x-httpd-cgi
 ee434023cf89d7df
+regex:(?i)\b(ezz\.guru|br\.goog2|oke-gas\.xyz|hso777\.xyz|pgbos789th\.pages\.dev|bd888\.xyz|R00t-Shell\.com|changthai\.site|ylyl23\.com|leafmailer\.pw|jan42\.tphu5583htr)\b
