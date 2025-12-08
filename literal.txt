@@ -268,3 +268,7 @@ literal:f87d42ed5c1be0ef547fe4a0810f5c98
 literal:Add admin user
 literal:move_uploaded_file(Var_Files('file'
 literal:define('rnavkdih',__FILE__)
+literal:chr(hexdec(substr
+literal:fedfd99ceb18bc7787911ec5953cd857
+literal:curl_init(base64_decode(strrev
+literal:HaxorShell
