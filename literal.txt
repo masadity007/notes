@@ -306,3 +306,4 @@ literal:Web Shell
 literal:include("zip://
 BOTAXWEBSHELL
 literal:base64_decode(strrev(str_rot13(explode
+literal:@eval/****/
