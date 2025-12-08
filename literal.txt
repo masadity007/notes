@@ -210,13 +210,9 @@ literal:if(isset($_REQUEST["0kb"])){die(">0kb<");
 literal:'file'.'_get'.'_content'.'s'
 literal:function Fucz($VJvVA)
 literal:$_SESSION['masuk']
-literal:Paman Gober
 literal:function madrid
-jancox
-boomnesia
-togel
+regex:(?i)(?:^|[^\w])(jancox|boomnesia|togel|v3n0m\s*shell|paman\s*gober|shin\s*code|tinyfilemanager|web\s*shell|botaxwebshell|linuxploit)(?:$|[^\w])
 literal:/GIF89a/i
-literal:Shin Code
 literal:$_a="b";$_b="a";$abc_="";
 literal:e566c31d15a5263605c6c40c5b69307552b643a1
 literal:$2a$10$ly4AlDbuh2zHUhwHa1wAA.l19lwfWDEy269zHm2WBbKkGku4PalWG
@@ -236,7 +232,6 @@ literal:jan42.tphu5583htr/komeri
 literal:'base'.'64'.'_dec'.'ode';
 literal:'base'.'64'.'_d'.'ecod'.'e'
 literal:goto GnmNTBvLPTJqEra;
-literal:v3n0m shell
 literal:'b'.'ase64'.'_d'.'ecode'
 literal:'bas'.'e64'.'_de'.'code'
 literal:leafmailer.pw
@@ -246,7 +241,6 @@ literal:dadsec404R
 literal:!isset($_POST["\156\x67\141\x72\x61\156"])
 literal:solevisible
 2852bfe7fb8e86f1a0148e02049410c6
-tinyfilemanager
 literal:$2y$10$JL6bpbc9NC2yESGLDAeXqec0MmX2Otl425y6xBCGlsiGQUuRgeb4m
 5c5fa09440696b310b4b1750d49f84ca
 literal:'file_ge'.'t'.'_co'.'ntents'
@@ -293,13 +287,9 @@ literal:uhex($_GET["
 literal:'fun'.'ct'.'i'.'o'
 literal:function cgi_get_POST_vars
 literal:删除选中文件
-literal:Web Shell
-
-BOTAXWEBSHELL
 literal:base64_decode(strrev(str_rot13(explode
 literal:@eval/****/
 literal:ezz.guru
 literal:$GLOBALS['fungsi']
-literal:linuxploit
 literal:AddType application/x-httpd-cgi
 ee434023cf89d7df
