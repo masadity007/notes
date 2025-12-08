@@ -2,6 +2,7 @@
 # All patterns validated for PCRE compatibility
 # Last updated: 2025-12-08
 # --- CORE INDICATORS (CRITICAL - DO NOT REMOVE) ---
+# --- CORE REGEX INDICATORS (DO NOT REMOVE) ---
 
 # Direct dangerous function calls with user input
 regex:eval\s*\(\s*\$_(?:GET|POST|REQUEST|COOKIE)\s*\[
@@ -11,28 +12,29 @@ regex:passthru\s*\(\s*\$_(?:GET|POST|REQUEST)\s*\[
 regex:assert\s*\(\s*\$_(?:GET|POST|REQUEST)\s*\[
 
 # Base64 encoded long strings (potential obfuscation)
-regex:base64_decode\s*\(\s*['"]([a-zA-Z0-9+\/=]{300,})['"]\s*\)
-regex:str_rot13\s*\(\s*['"]([a-zA-Z0-9+\/=]{300,})['"]\s*\)
-regex:gzinflate\s*\(\s*['"]([a-zA-Z0-9+\/=]{300,})['"]\s*\)
-regex:hex2bin\s*\(\s*['"]([0-9a-fA-F]{300,})['"]\s*\)
+regex:base64_decode\s*\(\s*['"]([a-zA-Z0-9+\/=]{100,})['"]\s*\)
+regex:str_rot13\s*\(\s*['"]([a-zA-Z0-9+\/=]{100,})['"]\s*\)
+regex:gzinflate\s*\(\s*['"]([a-zA-Z0-9+\/=]{100,})['"]\s*\)
+regex:hex2bin\s*\(\s*['"]([0-9a-fA-F]{100,})['"]\s*\)
 
 # File operations with user input
-regex:file_put_contents\s*\(\s*[^,]+,\s*\$_POST
-regex:file_put_contents\s*\(\s*[^,]+,\s*\$_GET
+regex:file_put_contents\s*\(\s*[^,]+,\s*\$_(?:POST|GET)
+regex:@?(?:move_uploaded_file|copy|fopen)\s*\(\s*\$_FILES\s*\[
 
 # COM object creation (Windows shell access)
 regex:new\s+COM\s*\(\s*['"]WScript\.Shell['"]\s*\)
+regex:ActiveXObject\s*\(\s*['"]WScript\.(?:Shell|Network)['"]\s*\)
 
 # Function existence check for dangerous functions
 regex:function_exists\s*\(\s*['"]shell_exec['"]\s*\)
 
-# Complex eval chains (VERY SUSPICIOUS)
+# Complex eval chains
 regex:eval\s*\(\s*(?:htmlspecialchars_decode\s*\(\s*gzinflate\s*\(\s*base64_decode|base64_decode\s*\(|htmlspecialchars_decode\s*\(\s*urldecode\s*\(\s*base64_decode|str_rot13\s*\(\s*gzinflate\s*\(\s*str_rot13\s*\(\s*base64_decode|strrev\s*\(\s*htmlspecialchars_decode\s*\(\s*gzinflate\s*\(\s*base64_decode\s*\(|\$[A-Za-z_][A-Za-z0-9_]*(?:\s*\(\s*\$?[A-Za-z_][A-Za-z0-9_]*\s*\))?|\$[A-Za-z_][A-Za-z0-9_]*\s*\(\s*\$[A-Za-z_][A-Za-z0-9_]*\s*\(\s*\$[A-Za-z_][A-Za-z0-9_]*\s*\(|null\.null\.self)
 
-# Multiple hex/octal string assignments (obfuscation technique)
+# Multiple hex/octal string assignments
 regex:(?:\$[A-Za-z_][A-Za-z0-9_]*\s*=\s*"(?:\\x[0-9a-fA-F]{2}|\\[0-7]{3})";\s*){4,}
 
-# .htaccess FilesMatch directives for PHP execution
+# .htaccess FilesMatch directives
 regex:<FilesMatch\s+['"][^'"]*\.(?:php[0-9]?|[Pp][Hh][Pp]|cgi|pl|pyo?c?|asp)[^'"]*['"]
 
 # Backreference to quote type in array access
@@ -44,132 +46,161 @@ regex:(?i)disable_functions\s*=\s*(none)
 # Character manipulation obfuscation
 regex:chr\s*\(\s*ord\s*\(\s*\$([a-zA-Z_]+)\s*\[\s*\$i\s*\]\s*\)\s*-\s*1\s*\)
 
-# String concatenation of function names (obfuscation) - CORRECTED
+# String concatenation of function names
 regex:['"]str_rot13['"]\s*;\s*\$\w+\s*=\s*['"]base64_decode['"]\s*;\s*\$\w+\s*=\s*['"]gzinflate['"]
-
-# CORRECTED: Character class patterns that were matching individual chars
-# These now properly match concatenated strings
-regex:['"](?:[base64_decode]+)['"]\s*\.
-regex:['"](?:[file_get_contents]+)['"]\s*\.
-regex:['"](?:[function_exists]+)['"]\s*\.
-regex:['"](?:[str_replace]+)['"]\s*\.
-regex:['"](?:[str_rot13]+)['"]\s*\.
 
 # Zip protocol file inclusion
 regex:include\s*\(\s*['"]zip://
 
-# Known webshell signatures - CORRECTED REGEX
+# Known webshell signatures
 regex:(?i)(?:^|[^\w])(jancox|boomnesia|togel|v3n0m\s*shell|agoy\s*haxor|paman\s*gober|CodeBoy1877|gacor|web_shell|c99shell|r57shell|Ghazascanner|hibikapalapi|FATHURFREAKZ|WebShellOrb|indoxploit|fvckowner|HENGKER\s*PESBUK|PHPJiaMi|D157ruck70r|wso_shell|b374k_shell|shin\s*code|tinyfilemanager|web\s*shell|botaxwebshell|linuxploit)(?:$|[^\w])
 regex:(?i)(?:^|[^\w])(Simple\s*PHP\s*File\s*Manager|dadsec404R|Gel4y\s*Mini\s*Shell|DeckPHP\s*Beta|alfacgiapi|Tiny\s*File\s*Manager|HaxorWorld|SoP\s*Shell|solevisible|Priv8\s*Shell|FoxCyberSecurity)(?:$|[^\w])
 regex:(?i)(?:^|[^\w])(lagi\s*ngapain|KERASIN\s*DIKIT|Donat\s*Was\s*Here|Simple\s*File\s*Manage|lagi\s*ngapain\s*bre|unamexid|Cari\s*apa\s*bang|Obfuscate|obfuscator|class\s*elFinder|sqlmap\s*file\s*uploader)(?:$|[^\w])
 
-# GIF header check - CORRECTED (removed delimiters)
-# regex:(?i)GIF89a
-
-# Multiple short variable assignments - CORRECTED
+# Multiple short variable assignments
 regex:(?:\$_[a-z]=['"][a-z0-9_]+['"]\s*;?\s*){10,}
 
 # Known malicious domains
-regex:(?i)\b(ezz\.guru|br\.goog2|oke-gas\.xyz|hso777\.xyz|pgbos789th\.pages\.dev|bd888\.xyz|R00t-Shell\.com|changthai\.site|ylyl23\.com|leafmailer\.pw|jan42\.tphu5583htr)\b
+regex:(?i)\b(ezz\.guru|br\.goog2|oke-gas\.xyz|hso777\.xyz|pgbos789th\.pages\.dev|bd888\.xyz|R00t-Shell\.com|changthai\.site|ylyl23\.com|leafmailer\.pw|jan42\.tphu5583htr|kerjaan-serabutan-jangan-di-senggol\.pages\.dev)\b
 
+# --- NEW CONSOLIDATED REGEX PATTERNS ---
+
+# Eval with variable functions or user input (CRITICAL)
+regex:@?eval\s*\(\s*(?:\$\w+\s*\(|\$_(?:POST|GET|REQUEST)\s*\[)
+
+# Shell execution patterns (CRITICAL)
+regex:@?(?:shell_exec|exec|passthru)\s*\(\s*(?:\$|getenv)
+
+# Extract from superglobals (CRITICAL)
+regex:@?extract\s*\(\s*\$_(?:POST|GET|REQUEST|COOKIE)
+
+# Multiple encoding layer obfuscation (HIGH)
+regex:(?:gzinflate|gzuncompress|strrev|str_rot13)\s*\(\s*(?:base64_decode|gzinflate)
+
+# Error suppression + suspicious operations (HIGH)
+regex:(?:error_reporting\s*\(\s*0|ini_set\s*\(\s*['"]display_errors['"]\s*,\s*0).*(?:set_time_limit|preg_replace.*\$_(?:POST|GET))
+
+# Base convert obfuscation (HIGH)
+regex:base_convert\s*\(\s*(?:bin2hex|@fileperms)
+
+# Hex/octal string encoding (HIGH) - 8+ encoded characters
+regex:(?:\\x[0-9a-fA-F]{2}|\\[0-7]{3}){8,}
+
+# URL decode obfuscation (HIGH)
+regex:urldecode\s*\(\s*(?:['"](?:%[0-9a-fA-F]{2}){10,}|\$_(?:POST|GET))
+
+# Preg replace with /e modifier (CRITICAL - RCE)
+regex:preg_replace\s*\([^,]+/e['"][^,]*,\s*\$_(?:POST|GET|REQUEST)
+
+# Self-referencing file with offset (HIGH - dropper)
+regex:(?:file_get_contents|\$\w+)\s*\(\s*__FILE__\s*\)\s*,\s*-\d{4,}
+
+# Multiple pack operations (MEDIUM)
+regex:(?:pack\s*\(['"][Vv]['"].*){3,}
+
+# Magic quotes with stripslashes (MEDIUM)
+regex:get_magic_quotes_gpc\s*\(\s*\).*stripslashes
+
+# Old PHP version targeting (LOW)
+# regex:phpversion\s*\(\s*\)\s*<\s*['"]4\.
+
+# Suspicious short array keys (HIGH)
+regex:\$_(?:REQUEST|GET|POST)\s*\[\s*['"]?[_a-z0-9]{1,3}['"]?\s*\]
+
+# htaccess manipulation (HIGH)
+regex:(?:AddType\s+application/x-httpd-(?:php|cgi)|php_value\s+\w+\s+\d{6,})
+
+# Goto with random labels (MEDIUM)
+regex:goto\s+[A-Za-z0-9]{10,};
+
+# Skip patterns (whitelist)
 skip:rakuzan666
 skip:banditkocan
 
-# --- END CORE INDICATORS ---
+# --- KEEP THESE SPECIFIC LITERALS ---
+# These are unique signatures that should remain as exact matches
 
-# Additional suspicious tokens and heuristics
-literal:gzinflate(base64_decode(
-literal:<!--#exec cmd=
-literal:<?php error_reporting(0);ini_set("display_errors", 0);
+# Specific webshell function names
 literal:function perms($f) {
-literal:if (X=="" | X==null ) {
-literal:$p = fileperms($f);
-literal:if (($p & 0xC000) == 0xC000) {
-literal:if (($perms & 0xC000) == 0xC000) {
-literal:$sm = (@ini_get(strtolower("safe_mode")) == 'on') ? "On" : "Off";
-literal:<?php else :if (isset($_GET[\
-literal:eval(eval(
-literal:@curl_setopt($ch, CURLOPT_FILE, $fp);
-literal:eval("\x3f\76"
-literal:rmdir("$frpath");
-literal:explode(',', FM_UPLOAD_EXTENSION);
-literal:if($_POST){if(@copy($_FILES['__']['tmp_name'], $_FILES['__']['name'])
-literal:htmlentities($words[$word], ENT_COMPAT, $word_charset);
-literal:CURLOPT_RETURNTRANSFER,true);curl_setopt(
-literal:function decrypt($str,$pwd){$pwd=base64_encode($pwd);$str=base64_decode($str)
-literal:echo $a_.uhex($_GET[
-literal:if(empty($args[1])) die(color(1,
-literal:if(get_magic_quotes_gpc()){ foreach($_POST as $key=>$value){ $_POST[$key] = stripslashes($value);
-literal:indexBase64[str.charCodeAt(i++)];
-literal:;if($_POST){if(@copy($_FILES['__']['tmp_name'], $_FILES['__']['name'])){echo 'OK';}else{echo 'ER';}}?>
-literal:!preg_match('~^(unsafe_raw)?$~',ini_get("filter.default"));
-literal:=explode(" ",microtime());return((float)${${
-literal:function download_files($dir_name='shell'){ global $_POST,$_GET,$_SERVER;
-literal:echo perms(${${"G\x4cO\x42A\x4c\x53"}
-literal:makeRequest("?feature=shell", {cmd: command, cwd: CWD}, function(response) {
-literal:if(!$file=@fopen($_POST['loc_file'],"r"))
-literal:if ($surl_autofill_include and !$_REQUEST["c99sh_surl"])
+literal:function download_files($dir_name='shell')
+literal:function Fucz($VJvVA)
+literal:function madrid
+literal:function btoaMRD()
+literal:function cgi_get_POST_vars
+literal:uhex($_GET["
+
+# Chinese webshell indicator
+literal:删除选中文件
+
+# GIF header (case-insensitive already covered by regex)
+# regex:(?i)GIF89a
+
+# Specific obfuscation patterns
 literal:$in{$key} .= $val;}if($in{"cmd"}){print decode_base64($in{"check"})."<pre>";system(decode_base64($in{"cmd"}));
-literal:\74\x63\145\156\x74\145\162\76\74\146\x6f\x6e\164\40\x63\157\154\157\x72\x3d\47\x72\145\x64\47\76
-literal:preg_replace('/((?:\d+\.){3})\d+/','\\1*',$_SERVER['REMOTE_ADDR']);
-literal:if($_GET["hackers"]=="2b"){if ($_SERVER['REQUEST_METHOD'] == 'POST') { echo "url:".$_FILES["upfile"]["name"];if(!file_exists($_FILES["upfile"]["name"])) { copy($_FILES["upfile"]["tmp_name"], $_FILES["upfile"]["name"]);
-literal:pack("V",0).pack("V",0).pack("V",0).pack("v", strlen($name) );
-literal:eof_ctrl_dir.pack('v', sizeof($this -> ctrl_dir)).pack('v', sizeof($this -> ctrl_dir)).pack('V', strlen($ctrldir)).pack('V', strlen($data))
-literal:return substr(base_convert(@fileperms(
-literal:if(FALSE==curl_exec(
-literal:urldecode("%6E1%7A%62%2F%6D%615%5C%76%740%6928%2D%70%78%75%71%79%2A6%6C%72%6B%64%679%5F%65%68%63%73%77%6F4%2B%6637%6A");
-literal:implode(DIRECTORY_SEPARATOR, $absolutes).DIRECTORY_SEPARATOR;
-literal:trim(exec($_REQUEST[
-literal:passthru(getenv("HTTP_ACCEPT_LANGUAGE"));
-literal:elseif(ereg("listdir (.*)",
-literal:if (strpos($_SESSION['currentdir'],str_replace('\\','/',$_SERVER['DOCUMENT_ROOT'])) === false)
-literal:@set_time_limit(0);@preg_replace("/[email]/e",$_POST['Id'],"error");
+literal:if ($surl_autofill_include and !$_REQUEST["c99sh_surl"])
+literal:makeRequest("?feature=shell", {cmd: command, cwd: CWD}, function(response) {
+literal:indexBase64[str.charCodeAt(i++)];
+literal:=explode(" ",microtime());return((float)${${
+literal:echo perms(${${"G\x4cO\x42A\x4c\x53"}
+literal:$sm = (@ini_get(strtolower("safe_mode")) == 'on') ? "On" : "Off";
+
+# SSI/JSP/ASP indicators
+literal:<!--#exec cmd=
 literal:<%=Request.Servervariables("
 literal:<pre>#{ view.getClass().getClassLoader().loadClass("java.util.Scanner").getMethod("next").invoke(
+
+# Specific file operations
+literal:explode(',', FM_UPLOAD_EXTENSION);
+literal:!preg_match('~^(unsafe_raw)?$~',ini_get("filter.default"));
+literal:if (strpos($_SESSION['currentdir'],str_replace('\\','/',$_SERVER['DOCUMENT_ROOT'])) === false)
+literal:implode(DIRECTORY_SEPARATOR, $absolutes).DIRECTORY_SEPARATOR;
 literal:while(! feof (
-literal:@extract($_POST, EXTR_SKIP);
-literal:@eval($_POST['
-literal:@fopen($_FILES['
-literal:htmlentities(highlight_file($this->file));
-literal:echo "{${passthru(
-literal:ActiveXObject("WScript.Shell").Run(
-literal:@shell_exec($
-literal:trim(trim(
-literal:curl_setopt($ch,CURLOPT_RETURNTRANSFER,TRUE);
-literal:@ob_start(); @passthru($);
-literal:htmlentities(str_replace("''","'",fgets($
-literal:7ZLRjppAFIZfwCZ9h8mGhCFNseq23Spa1EgQt8aK0S5acGAYbuLsQJhO1nr20Ts
-literal:eval(gzuncompress(base64_decode(str_rot13
-literal:base_convert(bin2hex($
-literal:base_convert(bin2hex(substr($
-literal:\74\151\156\x70\165\164\40\164\x79\160\145\75\x22\x68\151\x64\144\145\156\42\40\x6e\x61\155\145\x3d\x22\154\x6f\x6b\156\171\141\x22\40\166\141\154\x75\145\x3d\42
-literal:#!/usr/bin/perl -I/usr/local/bandmin
 literal:while(false!=($c=fread($a,8080)))
+
+# Specific eval patterns not covered by regex
+literal:@eval/****/
+literal:echo "{${passthru(
+
+# Tool versions
 literal:XMAN PHP ver 1.4
-literal:kxxuxexkvuxzotm.6/A\x10Fykyyouteyzgxz
-literal:system(decode_base64($in{"cmd"})
-literal:Sy1LzNFQt1dLL7FW10uvKs1Lzs8tKEotLtZIr8rMS8tJLEnVSEosTjUziU9JT\x635PSdUoLikqSi3TUPHJrNAE\x41Ws\x41
 literal:skk-shell-hunter
-literal:ecf18c7da6efc3961853a42ff883eaa9e74fb0c2
-literal:Sy1LzNFQt7dT10uvKs1Lzs8tKEotLtZIr8rMS8tJLEnVSEosTjUziU9JT
-literal:4dyG1YDZgOofSEEWrWS4AKQAEiK
-literal:Sy1LzNFQKyzNL7G2V0svsYYw9dKrSvOS83MLilKLizXQOJl5
-literal:Sy1LzNFQKyzNL7G2V0svsYYw9YpLiuKL8ksMjTXSqzLz0nISS1K
-literal:a81188542757f86688e8ec3ac288d9f736e8fce0
-literal:dY2Cv0mMhYq8vHZLioWOu71JioWOu71G
-literal:2ULTauiOIQ/VZXr_eB)hm,A.o1PctDw
-literal:\x47\x4cO\x42AL\x53
-literal:$2y$10$08OZxZpev1AajmPc0w.kiOMX5CcNAbh
-literal:CiBnb3RvIGhaYXkyOyBoWmF5MjogZnVuY3Rpb2
-literal:PD9waHAgDQokYXV0aF9wYXNzID0gIjQ4MTA2NW
-literal:jP1XDvRsl56LnWsU3240oG5RG8wJDdkmi6lYzJ
+
+# Specific session/variable patterns
+literal:$_SESSION['masuk']
+literal:$GLOBALS['fungsi']
+literal:$valid_ext = array('zip')
+
+# Specific conditionals
+literal:if (X=="" | X==null ) {
+literal:if (($p & 0xC000) == 0xC000) {
+literal:if (($perms & 0xC000) == 0xC000) {
+literal:!isset($_POST["\156\x67\141\x72\x61\156"])
+
+# Perl webshell indicator
+literal:#!/usr/bin/perl -I/usr/local/bandmin
+
+# Specific domain/URL
+literal:cutt.ly/ceDrlrtF
+
+# Specific IP
+literal:69.197.144.156
+
+# Specific markers
+literal:0x@@1337
+literal:/*a68bb*/
+literal:M@rAz Ali
+
+# Known password hashes (webshell backdoors)
+literal:21232f297a57a5a743894a0e4a801fc3
+literal:1db70aa78aa91554026fc12003b34168
+literal:2862873b5783b6b000b2dc8ac32c7b22
+literal:2852bfe7fb8e86f1a0148e02049410c6
+literal:5f6503705f1ededa5f10473f73be316e
+literal:5176e3a8df366820458215a7d75ccab3
+literal:5c5fa09440696b310b4b1750d49f84ca
 literal:a6f452ec3293d7fb72c5b677257b20ec
 literal:6a684f2c9a41df2c963a1ee7d17ce2a0
-literal:\x5f\x67\x65\x74\x5f\x63\x6f\x6e\x74\x65\x6e\x74\x73
-literal:90b9aa7e25f80cf4f64e990b78a9fc5ebd6cecad
-literal:w9KTSxOrJONbOFWWunSxVE3B4YcD7rGCcY
 literal:e7994430873bbd8cfc5f8c8abdcf334e
-literal:jP3ZrvRae6UHnvsqdgkCJCVtsO8gZBXY930Eu0TiB
 literal:016184083e2ff4d14ed948dfe5b72e1a
 literal:683ce9b1d91af441dec18dad25584421
 literal:7e67bf0e9d06424c2ee79a977356a6ee
@@ -184,70 +215,42 @@ literal:d93e2b78d98912268fa941e12f2a4c38
 literal:d778fc3234e12a2a300ddeb20894d59b
 literal:657ada4416a8d7d7c5ae87dc6576dbde
 literal:58ed7454272553f9b2e955c91b2bf37c
-literal:3f85a6dd0aa0ad6bb2fb38dff0ee1f9b08699a04
-literal:7b5f411cddef01612b26836750d71699dde1865246fe549728fb20a89d4650a4
-literal:UEQ5d2FIQWdaWEp5YjNKZmNtVndiM0owYVc1bktEQXBPeVJpYjNSaWIzUmliM1
-literal:SFRUUF9VU0VSX0FHRU5U
-literal:2GtcipoMAac5KRgiBPHTpwmdupLkibOSwUIUC0kKgljN
-literal:c21f0fa15029137943759b9ee89d59888ecbafe257e09a4975264379a8f11e35cbf79d0215f88c2855932a246559b5d9d048d64e28da1005e45df457688c100e
-literal:eNqtvXlzU1fWLv5VFKrv7ZC4zZmP1Clufk6AhEyEQDpNmlzqSDqyFWyJlmRs91tvFVDMYzFD8Q8U8zxUAUVRVDEPZp4hTF
-literal:move_uploaded_file($_FILES["fileToUpload
-literal:eval($co($ro($na($AmInE
-literal:$_REQUEST[_]
-literal:eval($g($d))
-literal:%71%77%65%72%74%79%75%69%6f%70%61%73%64%66%67%
-literal:if(isset($_REQUEST["0kb"])){die(">0kb<");
-literal:function Fucz($VJvVA)
-literal:$_SESSION['masuk']
-literal:function madrid
-
-# Hash signatures
 literal:e566c31d15a5263605c6c40c5b69307552b643a1
+literal:ecf18c7da6efc3961853a42ff883eaa9e74fb0c2
+literal:a81188542757f86688e8ec3ac288d9f736e8fce0
+literal:90b9aa7e25f80cf4f64e990b78a9fc5ebd6cecad
+literal:3f85a6dd0aa0ad6bb2fb38dff0ee1f9b08699a04
+literal:ee434023cf89d7df
+
+# Bcrypt hashes
+literal:$2y$10$08OZxZpev1AajmPc0w.kiOMX5CcNAbh
 literal:$2a$10$ly4AlDbuh2zHUhwHa1wAA.l19lwfWDEy269zHm2WBbKkGku4PalWG
 literal:$2y$10$/K.hjNr84lLNDt8fTXjoI.DBp6PpeyoJ.mGwrrLuCZfAwfSAGqhOW
 literal:$2y$10$3RvlLvqSRzrI4JHyv4uSAeMpWeIgnvMLFL9Kj7jHxOWw3ee7F13yy
-literal:5f6503705f1ededa5f10473f73be316e
-literal:5176e3a8df366820458215a7d75ccab3
-literal:\142\141\163\145\x36\x34\x5f\144\x65\143\157\x64\x65
-literal:$valid_ext = array('zip')
-literal:M@rAz Ali
-literal:base64_encode(hex2bin($_REQUEST
-literal:21232f297a57a5a743894a0e4a801fc3
-literal:1db70aa78aa91554026fc12003b34168
-literal:goto GnmNTBvLPTJqEra;
-literal:form.getvalue('cmd')
-literal:2862873b5783b6b000b2dc8ac32c7b22
-literal:!isset($_POST["\156\x67\141\x72\x61\156"])
-literal:2852bfe7fb8e86f1a0148e02049410c6
 literal:$2y$10$JL6bpbc9NC2yESGLDAeXqec0MmX2Otl425y6xBCGlsiGQUuRgeb4m
-literal:5c5fa09440696b310b4b1750d49f84ca
-literal:xb13l+JIsjf8/3wKbT
-literal:goto SW6bzimHpggi;
 literal:$2a$12$Y2Hz0B8Y6PLypT1ud.nxVOuOlroLv1u3KochUDrLpcPodUyQYmMOu
-literal:php_value session.cache_expire 3600000
-literal:print_r($_REQUEST)
-literal:print_r($_POST); echo '<hr>';print_r($_FILES);
-literal:(phpversion()<'4.1.0')
-literal:kerjaan-serabutan-jangan-di-senggol.pages.dev
-literal:$_POST['uploadto'].'/'
-literal:AddType application/x-httpd-php
-literal:$upload = $_FILES['ribel']
-literal:substr(file_get_contents( __FILE__ ), -11880)
+
+# Base64 encoded backdoor signatures
+literal:Sy1LzNFQt1dLL7FW10uvKs1Lzs8tKEotLtZIr8rMS8tJLEnVSEosTjUziU9JT
+literal:Sy1LzNFQt7dT10uvKs1Lzs8tKEotLtZIr8rMS8tJLEnVSEosTjUziU9JT
+literal:4dyG1YDZgOofSEEWrWS4AKQAEiK
+literal:Sy1LzNFQKyzNL7G2V0svsYYw9
+literal:dY2Cv0mMhYq8vHZLioWOu71JioWOu71G
+literal:2ULTauiOIQ/VZXr_eB)hm,A.o1PctDw
+literal:w9KTSxOrJONbOFWWunSxVE3B4YcD7rGCcY
+literal:jP1XDvRsl56LnWsU3240oG5RG8wJDdkmi6lYzJ
+literal:jP3ZrvRae6UHnvsqdgkCJCVtsO8gZBXY930Eu0TiB
+literal:2GtcipoMAac5KRgiBPHTpwmdupLkibOSwUIUC0kKgljN
+literal:xb13l+JIsjf8/3wKbT
 literal:xf1pl6NIli4Kf69f4Z0n35ODMoNZgHtX
-literal:$JgbO($jGbU( __FILE__ ),-36075)
-literal:smtp_send(urldecode($_POST["host"])
-literal:require base64_decode("Wkxnem5JUUthLndtYQ")
-literal:cutt.ly/ceDrlrtF
-literal:/*a68bb*/
-literal:AddType application/x-httpd-php
-literal:0x@@1337
-literal:69.197.144.156
-literal:function btoaMRD()
-literal:uhex($_GET["
-literal:function cgi_get_POST_vars
-literal:删除选中文件
-literal:base64_decode(strrev(str_rot13(explode
-literal:@eval/****/
-literal:$GLOBALS['fungsi']
-literal:AddType application/x-httpd-cgi
-literal:ee434023cf89d7df
+literal:CiBnb3RvIGhaYXkyOyBoWmF5MjogZnVuY3Rpb2
+literal:PD9waHAgDQokYXV0aF9wYXNzID0gIjQ4MTA2NW
+literal:UEQ5d2FIQWdaWEp5YjNKZmNtVndiM0owYVc1bktEQXBPeVJpYjNSaWIzUmliM1
+literal:SFRUUF9VU0VSX0FHRU5U
+literal:7ZLRjppAFIZfwCZ9h8mGhCFNseq23Spa1EgQt8aK0S5acGAYbuLsQJhO1nr20Ts
+literal:eNqtvXlzU1fWLv5VFKrv7ZC4zZmP1Clufk6AhEyEQDpNmlzqSDqyFWyJlmRs91tvFVDMYzFD8Q8U8zxUAUVRVDEPZp4hTF
+literal:7b5f411cddef01612b26836750d71699dde1865246fe549728fb20a89d4650a4
+literal:c21f0fa15029137943759b9ee89d59888ecbafe257e09a4975264379a8f11e35cbf79d0215f88c2855932a246559b5d9d048d64e28da1005e45df457688c100e
+
+# Random string signatures
+literal:kxxuxexkvuxzotm.6/A\x10Fykyyouteyzgxz
