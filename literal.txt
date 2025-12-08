@@ -308,3 +308,4 @@ BOTAXWEBSHELL
 literal:base64_decode(strrev(str_rot13(explode
 literal:@eval/****/
 literal:ezz.guru
+literal:$GLOBALS['fungsi']
