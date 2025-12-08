@@ -73,7 +73,7 @@ regex:(?i)\b(ezz\.guru|br\.goog2|oke-gas\.xyz|hso777\.xyz|pgbos789th\.pages\.dev
 regex:@?eval\s*\(\s*(?:\$\w+\s*\(|\$_(?:POST|GET|REQUEST)\s*\[)
 
 # Shell execution patterns (CRITICAL)
-regex:@?(?:shell_exec|exec|passthru)\s*\(\s*(?:\$|getenv)
+regex:@?(?:shell_exec|passthru)\s*\(\s*(?:\$|getenv)
 
 # Extract from superglobals (CRITICAL)
 regex:@?extract\s*\(\s*\$_(?:POST|GET|REQUEST|COOKIE)
