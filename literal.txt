@@ -32,13 +32,17 @@ function_exists\('shell_exec'\)
 regex:eval\((?:htmlspecialchars_decode\(gzinflate\(base64_decode|base64_decode\(|htmlspecialchars_decode\(urldecode\(base64_decode|str_rot13\(gzinflate\(str_rot13\(base64_decode|strrev\(htmlspecialchars_decode\(gzinflate\(base64_decode\(|\$[A-Za-z_][A-Za-z0-9_]*(?:\(\$?[A-Za-z_][A-Za-z0-9_]*\))?|\$[A-Za-z_][A-Za-z0-9_]*\(\$[A-Za-z_][A-Za-z0-9_]*\(\$[A-Za-z_][A-Za-z0-9_]*\(|null\.null\.self)
 regex:(?:\$[A-Za-z_][A-Za-z0-9_]*\s*=\s*"(?:\\x[0-9a-fA-F]{2}|\\[0-7]{3})";\s*){4,}
 regex:/<FilesMatch\s+"[^"]*(?:php[0-9]?|phtml|exe|bash|sh|pl|perl|py)(?:[^"]*(?:php[0-9]?|phtml|exe|bash|sh|pl|perl|py)){2,}[^"]*"/i
+regex:\$_(GET|POST|REQUEST)\s*\[\s*(['"])(cmd|exec|shell|system|eval)\2\s*\]
+regex:disable_functions\s*=\s*(?i)(none)
+regex:chr\(ord\(\$([a-zA-Z_]+)\[\$i\]\)-1\)
+regex:'str_rot13';\s*\$\w+\s*=\s*'base64_decode';\s*\$\w+\s*=\s*'gzinflate';
+literal:include("zip://
 # --- END CORE INDICATORS ------------------------------------
 # Additional suspicious tokens and heuristics collected from
 # common malware droppers and obfuscated loaders. Feel free to
 # extend this list, but keep the core section intact.
 gacor
 togel
-child_stdin, child_stdout = os.popen2(base64.b64decode(cmd))
 gzinflate(base64_decode(
 <!--#exec cmd=
 literal:;@eval(
@@ -73,8 +77,6 @@ literal: } } function download_files($dir_name='shell'){ global $_POST,$_GET,$_S
 literal:echo perms(${${"G\x4cO\x42A\x4c\x53"}
 literal:makeRequest("?feature=shell", {cmd: command, cwd: CWD}, function(response) {
 literal:if(!$file=@fopen($_POST['loc_file'],"r"))
-literal:err(1,$_POST['loc_file']); $_POST['cmd']=""
-literal:if(isset($_REQUEST['cmd'])){ echo "<pre>"; $cmd = ($_REQUEST['cmd']); system($cmd);
 literal:if ($surl_autofill_include and !$_REQUEST["c99sh_surl"])
 literal:$in{$key} .= $val;}if($in{"cmd"}){print decode_base64($in{"check"})."<pre>";system(decode_base64($in{"cmd"}));
 literal:\74\x63\145\156\x74\145\162\76\74\146\x6f\x6e\164\40\x63\157\154\157\x72\x3d\47\x72\145\x64\47\76
@@ -100,12 +102,7 @@ literal:@extract($_POST, EXTR_SKIP);
 literal:system(base64_decode(
 literal:exec(base64_decode(
 literal:@eval($_POST['
-literal:$_GET['cmd']
-literal:($_POST['cmd']
-$_POST['cmd']
-literal:$_REQUEST['cmd']
 literal:@fopen($_FILES['
-literal:if(isset($_REQUEST['cmd']))
 literal:shell_exec(base64_decode(
 literal:@system(base64_decode(
 literal:@eval(gzinflate(base64_decode(
@@ -232,8 +229,6 @@ literal:Priv8 Shell
 literal:\142\141\163\145\x36\x34\x5f\144\x65\143\157\x64\x65
 literal:$valid_ext = array('zip')
 literal:M@rAz Ali
-regex:disable_functions\s*=\s*(?i)(none)
-regex:chr\(ord\(\$([a-zA-Z_]+)\[\$i\]\)-1\)
 literal:base64_encode(hex2bin($_REQUEST
 21232f297a57a5a743894a0e4a801fc3
 1db70aa78aa91554026fc12003b34168
@@ -245,7 +240,6 @@ literal:v3n0m shell
 literal:'b'.'ase64'.'_d'.'ecode'
 literal:'bas'.'e64'.'_de'.'code'
 literal:leafmailer.pw
-regex:'str_rot13';\s*\$\w+\s*=\s*'base64_decode';\s*\$\w+\s*=\s*'gzinflate';
 literal:form.getvalue('cmd')
 literal:2862873b5783b6b000b2dc8ac32c7b22
 literal:dadsec404R
@@ -300,7 +294,7 @@ literal:'fun'.'ct'.'i'.'o'
 literal:function cgi_get_POST_vars
 literal:删除选中文件
 literal:Web Shell
-literal:include("zip://
+
 BOTAXWEBSHELL
 literal:base64_decode(strrev(str_rot13(explode
 literal:@eval/****/
