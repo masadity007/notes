@@ -23,11 +23,7 @@ hex2bin\(\s*[\'\"]([0-9a-fA-F]{100,})[\'\"]\s*\)
 file_put_contents\([^,]+,\s*\$_POST
 file_put_contents\([^,]+,\s*\$_GET
 new COM\(\'WScript\.Shell\'\)
-web_shell
-c99shell
-r57shell
-wso_shell
-b374k_shell
+
 function_exists\('shell_exec'\)
 regex:eval\((?:htmlspecialchars_decode\(gzinflate\(base64_decode|base64_decode\(|htmlspecialchars_decode\(urldecode\(base64_decode|str_rot13\(gzinflate\(str_rot13\(base64_decode|strrev\(htmlspecialchars_decode\(gzinflate\(base64_decode\(|\$[A-Za-z_][A-Za-z0-9_]*(?:\(\$?[A-Za-z_][A-Za-z0-9_]*\))?|\$[A-Za-z_][A-Za-z0-9_]*\(\$[A-Za-z_][A-Za-z0-9_]*\(\$[A-Za-z_][A-Za-z0-9_]*\(|null\.null\.self)
 regex:(?:\$[A-Za-z_][A-Za-z0-9_]*\s*=\s*"(?:\\x[0-9a-fA-F]{2}|\\[0-7]{3})";\s*){4,}
@@ -41,8 +37,6 @@ literal:include("zip://
 # Additional suspicious tokens and heuristics collected from
 # common malware droppers and obfuscated loaders. Feel free to
 # extend this list, but keep the core section intact.
-gacor
-togel
 gzinflate(base64_decode(
 <!--#exec cmd=
 literal:;@eval(
@@ -155,9 +149,6 @@ a6f452ec3293d7fb72c5b677257b20ec
 literal:Donat Was Here
 literal:\x5f\x67\x65\x74\x5f\x63\x6f\x6e\x74\x65\x6e\x74\x73
 90b9aa7e25f80cf4f64e990b78a9fc5ebd6cecad
-literal:Simple PHP File Manager
-literal:Tiny File Manager
-FoxCyberSecurity
 w9KTSxOrJONbOFWWunSxVE3B4YcD7rGCcY
 e7994430873bbd8cfc5f8c8abdcf334e
 jP3ZrvRae6UHnvsqdgkCJCVtsO8gZBXY930Eu0TiB
@@ -185,18 +176,8 @@ literal:eval($co($ro($na($AmInE
 literal:Gel4y Mini Shell
 literal:R00t-Shell.com
 literal:DeckPHP Beta
-Ghazascanner
-hibikapalapi
-FATHURFREAKZ
-WebShellOrb
-indoxploit
-fvckowner
-literal:HENGKER PESBUK
-literal:agoy haxor
-PHPJiaMi
-D157ruck70r
 literal:bd888.xyz
-$_REQUEST[_]
+literal:$_REQUEST[_]
 literal:'base'.'64'.'_de'.'code'
 literal:'base6'.'4'.'_deco'.'de'
 literal:'base6'.'4'.'_d'.'ec'.'ode';
@@ -211,7 +192,8 @@ literal:'file'.'_get'.'_content'.'s'
 literal:function Fucz($VJvVA)
 literal:$_SESSION['masuk']
 literal:function madrid
-regex:(?i)(?:^|[^\w])(jancox|boomnesia|togel|v3n0m\s*shell|paman\s*gober|shin\s*code|tinyfilemanager|web\s*shell|botaxwebshell|linuxploit)(?:$|[^\w])
+regex:(?i)(?:^|[^\w])(jancox|boomnesia|togel|v3n0m\s*shell|agoy\s*haxor|paman\s*gober|gacor|web_shell|c99shell|r57shell|Ghazascanner|hibikapalapi|FATHURFREAKZ|WebShellOrb|indoxploit|fvckowner|HENGKER\s*PESBUK|PHPJiaMi|D157ruck70r|wso_shell|b374k_shell|shin\s*code|tinyfilemanager|web\s*shell|botaxwebshell|linuxploit)(?:$|[^\w])
+regex:(?i)(?:^|[^\w])(Simple\s*PHP\s*File\s*Manager|Tiny\s*File\s*Manager|HaxorWorld|SoP\s*Shell|solevisible|Priv8\s*Shell|FoxCyberSecurity)(?:$|[^\w])
 literal:/GIF89a/i
 literal:$_a="b";$_b="a";$abc_="";
 literal:e566c31d15a5263605c6c40c5b69307552b643a1
@@ -220,7 +202,6 @@ literal:$2y$10$/K.hjNr84lLNDt8fTXjoI.DBp6PpeyoJ.mGwrrLuCZfAwfSAGqhOW
 literal:$2y$10$3RvlLvqSRzrI4JHyv4uSAeMpWeIgnvMLFL9Kj7jHxOWw3ee7F13yy
 literal:changthai.site
 5f6503705f1ededa5f10473f73be316e
-literal:Priv8 Shell
 5176e3a8df366820458215a7d75ccab3
 literal:\142\141\163\145\x36\x34\x5f\144\x65\143\157\x64\x65
 literal:$valid_ext = array('zip')
@@ -239,7 +220,6 @@ literal:form.getvalue('cmd')
 literal:2862873b5783b6b000b2dc8ac32c7b22
 literal:dadsec404R
 literal:!isset($_POST["\156\x67\141\x72\x61\156"])
-literal:solevisible
 2852bfe7fb8e86f1a0148e02049410c6
 literal:$2y$10$JL6bpbc9NC2yESGLDAeXqec0MmX2Otl425y6xBCGlsiGQUuRgeb4m
 5c5fa09440696b310b4b1750d49f84ca
@@ -253,7 +233,6 @@ literal:print_r($_REQUEST)
 literal:print_r($_POST); echo '<hr>';print_r($_FILES);
 literal:sqlmap file uploader
 literal:(phpversion()<'4.1.0')
-literal:SoP Shell
 literal:class elFinder
 literal:Obfuscate by none
 literal:kerjaan-serabutan-jangan-di-senggol.pages.dev
@@ -275,7 +254,6 @@ literal:pgbos789th.pages.dev
 literal:oke-gas.xyz
 literal:ylyl23.com/ios/23.php
 literal:/*a68bb*/
-literal:HaxorWorld
 literal:AddType application/x-httpd-php
 literal:lagi ngapain
 literal:KERASIN DIKIT
