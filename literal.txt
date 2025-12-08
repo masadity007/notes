@@ -4,6 +4,9 @@
 # --- CORE INDICATORS (CRITICAL - DO NOT REMOVE) ---
 # --- CORE REGEX INDICATORS (DO NOT REMOVE) ---
 
+# Complex eval chains
+regex:eval\s*\(\s*(?:htmlspecialchars_decode\s*\(\s*gzinflate\s*\(\s*base64_decode|base64_decode\s*\(|htmlspecialchars_decode\s*\(\s*urldecode\s*\(\s*base64_decode|str_rot13\s*\(\s*gzinflate\s*\(\s*str_rot13\s*\(\s*base64_decode|strrev\s*\(\s*htmlspecialchars_decode\s*\(\s*gzinflate\s*\(\s*base64_decode\s*\(|\$[A-Za-z_][A-Za-z0-9_]*(?:\s*\(\s*\$?[A-Za-z_][A-Za-z0-9_]*\s*\))?|\$[A-Za-z_][A-Za-z0-9_]*\s*\(\s*\$[A-Za-z_][A-Za-z0-9_]*\s*\(\s*\$[A-Za-z_][A-Za-z0-9_]*\s*\(|null\.null\.self)
+
 # Direct dangerous function calls with user input
 regex:eval\s*\(\s*\$_(?:GET|POST|REQUEST|COOKIE)\s*\[
 regex:shell_exec\s*\(\s*\$_(?:GET|POST|REQUEST)\s*\[
@@ -12,10 +15,10 @@ regex:passthru\s*\(\s*\$_(?:GET|POST|REQUEST)\s*\[
 regex:assert\s*\(\s*\$_(?:GET|POST|REQUEST)\s*\[
 
 # Base64 encoded long strings (potential obfuscation)
-regex:base64_decode\s*\(\s*['"]([a-zA-Z0-9+\/=]{100,})['"]\s*\)
-regex:str_rot13\s*\(\s*['"]([a-zA-Z0-9+\/=]{100,})['"]\s*\)
-regex:gzinflate\s*\(\s*['"]([a-zA-Z0-9+\/=]{100,})['"]\s*\)
-regex:hex2bin\s*\(\s*['"]([0-9a-fA-F]{100,})['"]\s*\)
+regex:base64_decode\s*\(\s*['"]([a-zA-Z0-9+\/=]{300,})['"]\s*\)
+regex:str_rot13\s*\(\s*['"]([a-zA-Z0-9+\/=]{300,})['"]\s*\)
+regex:gzinflate\s*\(\s*['"]([a-zA-Z0-9+\/=]{300,})['"]\s*\)
+regex:hex2bin\s*\(\s*['"]([0-9a-fA-F]{300,})['"]\s*\)
 
 # File operations with user input
 regex:file_put_contents\s*\(\s*[^,]+,\s*\$_(?:POST|GET)
@@ -27,9 +30,6 @@ regex:ActiveXObject\s*\(\s*['"]WScript\.(?:Shell|Network)['"]\s*\)
 
 # Function existence check for dangerous functions
 regex:function_exists\s*\(\s*['"]shell_exec['"]\s*\)
-
-# Complex eval chains
-regex:eval\s*\(\s*(?:htmlspecialchars_decode\s*\(\s*gzinflate\s*\(\s*base64_decode|base64_decode\s*\(|htmlspecialchars_decode\s*\(\s*urldecode\s*\(\s*base64_decode|str_rot13\s*\(\s*gzinflate\s*\(\s*str_rot13\s*\(\s*base64_decode|strrev\s*\(\s*htmlspecialchars_decode\s*\(\s*gzinflate\s*\(\s*base64_decode\s*\(|\$[A-Za-z_][A-Za-z0-9_]*(?:\s*\(\s*\$?[A-Za-z_][A-Za-z0-9_]*\s*\))?|\$[A-Za-z_][A-Za-z0-9_]*\s*\(\s*\$[A-Za-z_][A-Za-z0-9_]*\s*\(\s*\$[A-Za-z_][A-Za-z0-9_]*\s*\(|null\.null\.self)
 
 # Multiple hex/octal string assignments
 regex:(?:\$[A-Za-z_][A-Za-z0-9_]*\s*=\s*"(?:\\x[0-9a-fA-F]{2}|\\[0-7]{3})";\s*){4,}
