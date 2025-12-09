@@ -270,3 +270,4 @@ literal:chr(hexdec(substr
 literal:fedfd99ceb18bc7787911ec5953cd857
 literal:curl_init(base64_decode(strrev
 literal:HaxorShell
+literal:negat1ve1337
