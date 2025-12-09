@@ -63,7 +63,7 @@ regex:(?i)(?:^|[^\w])(lagi\s*ngapain|KERASIN\s*DIKIT|Donat\s*Was\s*Here|Simple\s
 regex:(?:\$_[a-z]=['"][a-z0-9_]+['"]\s*;?\s*){10,}
 
 # Known malicious domains
-regex:(?i)\b(ezz\.guru|br\.goog2|oke-gas\.xyz|hso777\.xyz|pgbos789th\.pages\.dev|bd888\.xyz|R00t-Shell\.com|changthai\.site|ylyl23\.com|leafmailer\.pw|jan42\.tphu5583htr|kerjaan-serabutan-jangan-di-senggol\.pages\.dev)\b
+regex:(?i)\b(ezz\.guru|br\.goog2|oke-gas\.xyz|hso777\.xyz|pgbos789th\.pages\.dev|bd888\.xyz|R00t-Shell\.com|changthai\.site|ylyl23\.com|egre55\.com|leafmailer\.pw|jan42\.tphu5583htr|kerjaan-serabutan-jangan-di-senggol\.pages\.dev)\b
 
 # --- NEW CONSOLIDATED REGEX PATTERNS ---
 
