@@ -160,7 +160,7 @@ literal:while(! feof (
 literal:while(false!=($c=fread($a,8080)))
 
 # Specific eval patterns not covered by regex
-literal:@eval/****/
+literal:@eval/****
 literal:echo "{${passthru(
 
 # Tool versions
