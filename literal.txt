@@ -46,11 +46,10 @@ regex:(?i)disable_functions\s*=\s*(none)
 regex:chr\s*\(\s*ord\s*\(\s*\$([a-zA-Z_]+)\s*\[\s*\$i\s*\]\s*\)\s*-\s*1\s*\)
 
 # String concatenation of function names
-regex:['"](?:[base64_decode]+)['"]\s*\.
-regex:['"](?:[file_get_contents]+)['"]\s*\.
-regex:['"](?:[function_exists]+)['"]\s*\.
-regex:['"](?:[str_rot13]+)['"]\s*\.
-regex:['"](?:[gzinflate]+)['"]\s*\.
+regex:'[base64_decode]+'(?:\s*\.\s*'[base64_decode]+')+
+regex:'[file_get_contents]+'(?:\s*\.\s*'[file_get_contents]+')+
+regex:'[function_exists]+'(?:\s*\.\s*'[function_exists]+')+
+regex:'[gzinflate]+'(?:\s*\.\s*'[gzinflate]+')+
 
 # Zip protocol file inclusion
 regex:include\s*\(\s*['"]zip://
