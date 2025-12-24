@@ -63,7 +63,7 @@ regex:(?i)(?:^|[^\w])(lagi\s*ngapain|KERASIN\s*DIKIT|Donat\s*Was\s*Here|Simple\s
 regex:(?:\$_[a-z]=['"][a-z0-9_]+['"]\s*;?\s*){10,}
 
 # Known malicious domains
-regex:(?i)\b(ezz\.guru|br\.goog2|oke-gas\.xyz|hso777\.xyz|pgbos789th\.pages\.dev|bd888\.xyz|R00t-Shell\.com|changthai\.site|ylyl23\.com|egre55\.com|leafmailer\.pw|jan42\.tphu5583htr|kerjaan-serabutan-jangan-di-senggol\.pages\.dev)\b
+regex:(?i)\b(egre55\.com|ezz\.guru|br\.goog2|oke-gas\.xyz|hso777\.xyz|pgbos789th\.pages\.dev|bd888\.xyz|R00t-Shell\.com|changthai\.site|ylyl23\.com|egre55\.com|leafmailer\.pw|jan42\.tphu5583htr|kerjaan-serabutan-jangan-di-senggol\.pages\.dev)\b
 
 # --- NEW CONSOLIDATED REGEX PATTERNS ---
 
@@ -278,3 +278,12 @@ literal:f702c1502be8e55f4208d69419f50d0a
 literal:login sukses
 literal:$dir=$_REQUEST["uploadDir"]
 literal:69.197.144.156
+literal:59e8d97dbcc1d0f65dea6ecd0e9fbe39
+literal:paste.ee
+literal:eval "$Az$Bz$Cz$z$Dz
+literal:$dir=$_REQUEST["uploadDir"];$dir=str_replace
+literal:$_COOKIE['ok_access']
+literal:Fungsi untuk
+literal:unamexid
+literal:tempuserpat
+literal:52a517dcd0fe415742bac2affee21591
