@@ -289,3 +289,5 @@ literal:tempuserpat
 literal:52a517dcd0fe415742bac2affee21591
 literal:classiccartrust
 literal:timtam.rpl
+literal:StrezzBoy
+literal:beritabaru.xyz
