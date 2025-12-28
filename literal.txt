@@ -291,3 +291,5 @@ literal:classiccartrust
 literal:timtam.rpl
 literal:StrezzBoy
 literal:beritabaru
+literal:DosaSec
+literal:GETMODULE($_REQUEST
