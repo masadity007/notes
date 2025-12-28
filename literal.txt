@@ -297,3 +297,4 @@ literal:HaxorNoname
 literal:nilam189
 literal:tenyom189
 literla:jancox
+literal:abc::run();
