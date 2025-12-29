@@ -86,7 +86,7 @@ regex:(?:error_reporting\s*\(\s*0|ini_set\s*\(\s*['"]display_errors['"]\s*,\s*0)
 regex:base_convert\s*\(\s*(?:bin2hex|@fileperms)
 
 # Hex/octal string encoding (HIGH) - 8+ encoded characters
-regex:(?:\\x[0-9a-fA-F]{2}|\\[0-7]{3}){8,}
+# regex:(?:\\x[0-9a-fA-F]{2}|\\[0-7]{3}){8,}
 
 # URL decode obfuscation (HIGH)
 regex:urldecode\s*\(\s*(?:['"](?:%[0-9a-fA-F]{2}){10,}|\$_(?:POST|GET))
@@ -298,4 +298,3 @@ literal:nilam189
 literal:tenyom189
 literla:jancox
 literal:abc::run();
-literal:WhistleBlowing
