@@ -273,7 +273,6 @@ literal:curl_init(base64_decode(strrev
 literal:HaxorShell
 literal:negat1ve1337
 literan:File Management Tool
-literal:WordPress Media Library
 literal:26483dbd0a04d9d9a7cd55da49d3b4a1
 literal:f702c1502be8e55f4208d69419f50d0a
 literal:login sukses
