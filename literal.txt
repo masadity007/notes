@@ -304,3 +304,9 @@ literal:teamnoreal.pages.dev
 literal:$_FILES['ganteng']
 literal:redirectseo.icu
 literal:ufa99ac.com
+literal:GAI-SEO
+literal:83a6ee9b34553e9cf5ef0c507270d
+literal:WjJWMFFtRnphV056U1c1bWJ3PT0
+literal:'https://s3.us-west-2.amazonaws.com'
+literal:lpsh.net
+literal:aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tLzVZNEgvc2VvL21haW4vc2VvYmFyYmFyLnBocA
