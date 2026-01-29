@@ -309,3 +309,4 @@ literal:'https://s3.us-west-2.amazonaws.com'
 literal:lpsh.net
 literal:aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tLzVZNEgvc2VvL21haW4vc2VvYmFyYmFyLnBocA
 literal:GantiDenganPasswordLu
+literal:HackerSec
