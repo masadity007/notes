@@ -47,7 +47,7 @@ regex:chr\s*\(\s*ord\s*\(\s*\$([a-zA-Z_]+)\s*\[\s*\$i\s*\]\s*\)\s*-\s*1\s*\)
 
 # String concatenation of function names
 regex:'[base64_decode]+'(?:\s*\.\s*'[base64_decode]+')+
-regex:'[function_exists]+'(?:\s*\.\s*'[function_exists]+')+
+# regex:'[function_exists]+'(?:\s*\.\s*'[function_exists]+')+
 regex:'[gzinflate]+'(?:\s*\.\s*'[gzinflate]+')+
 
 # Zip protocol file inclusion
