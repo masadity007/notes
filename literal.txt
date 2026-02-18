@@ -311,3 +311,4 @@ literal:aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tLzVZNEgvc2VvL21haW4vc2VvYmFy
 literal:GantiDenganPasswordLu
 literal:HackerSec
 literal:https://bypass.pw/raw/u5xPz0e
+literal:aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL
