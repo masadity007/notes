@@ -51,7 +51,7 @@ regex:include\s*\(\s*['"]zip://
 # Known webshell signatures
 regex:(?i)(?:^|[^\w])(jancox|boomnesia|togel|v3n0m\s*shell|agoy\s*haxor|paman\s*gober|CodeBoy1877|gacor|web_shell|c99shell|r57shell|Ghazascanner|hibikapalapi|FATHURFREAKZ|WebShellOrb|indoxploit|fvckowner|HENGKER\s*PESBUK|PHPJiaMi|D157ruck70r|wso_shell|b374k_shell|shin\s*code|tinyfilemanager|web\s*shell|botaxwebshell|8152413345|linuxploit)(?:$|[^\w])
 regex:(?i)(?:^|[^\w])(Simple\s*PHP\s*File\s*Manager|dadsec404R|Gel4y\s*Mini\s*Shell|DeckPHP\s*Beta|alfacgiapi|Tiny\s*File\s*Manager|HaxorWorld|SoP\s*Shell|solevisible|Priv8\s*Shell|FoxCyberSecurity)(?:$|[^\w])
-regex:(?i)(?:^|[^\w])(lagi\s*ngapain|KERASIN\s*DIKIT|Donat\s*Was\s*Here|Simple\s*File\s*Manage|lagi\s*ngapain\s*bre|unamexid|Cari\s*apa\s*bang|class\s*elFinder|sqlmap\s*file\s*uploader)(?:$|[^\w])
+regex:(?i)(?:^|[^\w])(lagi\s*ngapain|KERASIN\s*DIKIT|Donat\s*Was\s*Here|Simple\s*File\s*Manage|lagi\s*ngapain\s*bre|unamexid|Cari\s*apa\s*bang|sqlmap\s*file\s*uploader)(?:$|[^\w])
 
 # Multiple short variable assignments
 regex:(?:\$_[a-z]=['"][a-z0-9_]+['"]\s*;?\s*){10,}
