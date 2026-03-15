@@ -85,7 +85,7 @@ regex:base_convert\s*\(\s*(?:bin2hex|@fileperms)
 # regex:(?:\\x[0-9a-fA-F]{2}|\\[0-7]{3}){8,}
 
 # URL decode obfuscation (HIGH)
-regex:urldecode\s*\(\s*(?:['"](?:%[0-9a-fA-F]{2}){10,}|\$_(?:POST|GET))
+# regex:urldecode\s*\(\s*(?:['"](?:%[0-9a-fA-F]{2}){10,}|\$_(?:POST|GET))
 
 # Preg replace with /e modifier (CRITICAL - RCE)
 regex:preg_replace\s*\([^,]+/e['"][^,]*,\s*\$_(?:POST|GET|REQUEST)
