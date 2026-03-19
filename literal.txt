@@ -97,7 +97,7 @@ regex:(?:file_get_contents|\$\w+)\s*\(\s*__FILE__\s*\)\s*,\s*-\d{4,}
 regex:(?:pack\s*\(['"][Vv]['"].*){3,}
 
 # Magic quotes with stripslashes (MEDIUM)
-regex:get_magic_quotes_gpc\s*\(\s*\).*stripslashes
+# regex:get_magic_quotes_gpc\s*\(\s*\).*stripslashes
 
 # Old PHP version targeting (LOW)
 # regex:phpversion\s*\(\s*\)\s*<\s*['"]4\.
