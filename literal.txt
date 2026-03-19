@@ -2,9 +2,9 @@
 # All patterns validated for PCRE compatibility
 # Last updated: 2025-12-08
 # --- CORE INDICATORS (CRITICAL - DO NOT REMOVE) ---
-skip:Symfony\\Component\\Console
-skip:Symfony\\Component\\HttpClient
-skip:ScssPhp\\ScssPhp
+skip:regex:Symfony\\Component\\Console
+skip:regex:Symfony\\Component\\HttpClient
+skip:regex:ScssPhp\\ScssPhp
 skip:doubleval
 # Complex eval chains
 regex:eval\s*\(\s*(?:htmlspecialchars_decode\s*\(\s*gzinflate\s*\(\s*base64_decode|base64_decode\s*\(|htmlspecialchars_decode\s*\(\s*urldecode\s*\(\s*base64_decode|str_rot13\s*\(\s*gzinflate\s*\(\s*str_rot13\s*\(\s*base64_decode|strrev\s*\(\s*htmlspecialchars_decode\s*\(\s*gzinflate\s*\(\s*base64_decode\s*\(|\$[A-Za-z_][A-Za-z0-9_]*(?:\s*\(\s*\$?[A-Za-z_][A-Za-z0-9_]*\s*\))?|\$[A-Za-z_][A-Za-z0-9_]*\s*\(\s*\$[A-Za-z_][A-Za-z0-9_]*\s*\(\s*\$[A-Za-z_][A-Za-z0-9_]*\s*\(|null\.null\.self)
