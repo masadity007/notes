@@ -115,7 +115,11 @@ regex:goto\s+[A-Za-z0-9]{10,};
 # Skip patterns (whitelist)
 skip:rakuzan666
 skip:banditkocan
-
+skip:thailandpost
+skip:pizzacomapy
+skip:linetoday
+skip:coretexcloud
+skip:cloudflareuseragent
 # --- KEEP THESE SPECIFIC LITERALS ---
 # These are unique signatures that should remain as exact matches
 
