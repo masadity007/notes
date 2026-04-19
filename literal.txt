@@ -120,6 +120,7 @@ skip:pizzacomapy
 skip:linetoday
 skip:coretexcloud
 skip:cloudflareuseragent
+skip:mahameruu
 # --- KEEP THESE SPECIFIC LITERALS ---
 # These are unique signatures that should remain as exact matches
 
