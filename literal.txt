@@ -330,3 +330,4 @@ literal:seoteamddd
 literal:alfashell
 literal:kingdefserver
 literal:WP Health Monitor
+literal:Aptisme
