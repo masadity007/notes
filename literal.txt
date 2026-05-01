@@ -331,3 +331,4 @@ literal:alfashell
 literal:kingdefserver
 literal:WP Health Monitor
 literal:Aptisme
+literal:short-link-th.pages.dev
