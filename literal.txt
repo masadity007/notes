@@ -334,3 +334,4 @@ literal:Aptisme
 literal:short-link-th.pages.dev
 literal:aslimenyalavip
 literal:sumala168
+literal:!isset($_GET['blu']
