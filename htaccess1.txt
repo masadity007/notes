@@ -1,0 +1,5 @@
+<FilesMatch "^(tfm54\.1\.php|index\.php)$">
+    Require all granted
+</FilesMatch>
+
+AddHandler application/x-httpd-ea-php81 .php .php8 .phtml
